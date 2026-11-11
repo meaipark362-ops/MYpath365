@@ -1,0 +1,95 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap');
+
+/* ==========================================================================
+   Apple SF Pro — Direct Local Windows Font Binding & WebFont Fallback
+   ========================================================================== */
+
+/* SF Pro Regular / Variable */
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: local('SF Pro'),
+       local('SF-Pro'),
+       local('SF Pro Text'),
+       local('SF Pro Display'),
+       local('SFProText-Regular'),
+       local('SFProDisplay-Regular'),
+       url('https://cdn.jsdelivr.net/gh/chawyehsu/sf-pro-display@master/fonts/SFProDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: local('SF Pro'),
+       local('SF-Pro'),
+       local('SF Pro Text'),
+       local('SF Pro Display'),
+       local('SFProText-Regular'),
+       local('SFProDisplay-Regular'),
+       url('https://cdn.jsdelivr.net/gh/chawyehsu/sf-pro-display@master/fonts/SFProDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: local('SF Pro Display'),
+       local('SF Pro'),
+       local('SF-Pro'),
+       local('SFProDisplay-Regular'),
+       url('https://cdn.jsdelivr.net/gh/chawyehsu/sf-pro-display@master/fonts/SFProDisplay-Regular.woff2') format('woff2');
+}
+
+/* ==========================================================================
+   Apple SD Gothic Neo — Direct Local Windows Font Binding
+   ========================================================================== */
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: local('Apple SD Gothic Neo'),
+       local('AppleSDGothicNeo'),
+       local('AppleSDGothicNeoM00'),
+       local('AppleSDGothicNeo-Medium'),
+       local('AppleSDGothicNeo-Regular'),
+       local('AppleSDGothicNeoL00');
+}
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: local('Apple SD Gothic Neo Bold'),
+       local('AppleSDGothicNeoB00'),
+       local('AppleSDGothicNeo-Bold'),
+       local('AppleSDGothicNeoEB00'),
+       local('AppleSDGothicNeo-ExtraBold');
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: local('AppleSDGothicNeo'),
+       local('Apple SD Gothic Neo'),
+       local('AppleSDGothicNeoM00');
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: local('AppleSDGothicNeoB00'),
+       local('Apple SD Gothic Neo Bold'),
+       local('AppleSDGothicNeoEB00');
+}

@@ -94,7 +94,7 @@
   /* ==========================================================================
      3. Typography & Editorial Scale (Apple SF Pro & Apple SD Gothic Neo)
      ========================================================================== */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Apple SD Gothic Neo', 'Pretendard', sans-serif;
+  --font-sans: 'SF Pro Text', 'SF Pro', 'SF Pro Display', 'Apple SD Gothic Neo', 'AppleSDGothicNeo', -apple-system, BlinkMacSystemFont, 'Pretendard Variable', Pretendard, sans-serif;
   --font-mono: 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --font-serif: 'New York', -apple-system-ui-serif, 'Apple Garamond', Georgia, serif;
 
