@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "cat-career-classes",
   "title": "01. 진로수업",
   "slug": "career-classes",
@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-11-04T12:00:00.000Z",
     "updatedAt": "2026-11-10T12:00:00.000Z",
-    "author": "박민우",
+    "author": "장민겸",
     "tags": ["진로수업", "마이크로프로세서", "진로검사", "모둠활동"],
     "readingTimeMinutes": 4,
     "isUnconfirmedMigration": false
@@ -114,3 +114,5 @@
     }
   ]
 }
+
+

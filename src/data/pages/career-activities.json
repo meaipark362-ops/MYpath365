@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "cat-career-activities",
   "title": "03. 진로활동",
   "slug": "career-activities",
@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-11-04T12:00:00.000Z",
     "updatedAt": "2026-11-10T12:00:00.000Z",
-    "author": "박민우",
+    "author": "장민겸",
     "tags": ["진로활동", "동아리", "하드웨어프로젝트", "경진대회"],
     "readingTimeMinutes": 5,
     "isUnconfirmedMigration": false
@@ -94,3 +94,5 @@
     }
   ]
 }
+
+

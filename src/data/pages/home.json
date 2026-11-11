@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-11-11T12:00:00.000Z",
     "updatedAt": "2026-11-11T12:00:00.000Z",
-    "author": "박민우 (Minwoo Park)",
+    "author": "장민겸 (Mingyeom Jang)",
     "tags": ["Embedded Software", "RTOS", "Computer Architecture", "AI Robotics", "MCU"],
     "readingTimeMinutes": 3,
     "isUnconfirmedMigration": false
@@ -22,7 +22,7 @@
       "richText": [
         {
           "type": "text",
-          "plainText": "MyPath365 [박민우 · 임베디드 & 로봇 시스템]",
+          "plainText": "MyPath365 [장민겸 · 임베디드 & 로봇 시스템]",
           "annotations": {
             "bold": true,
             "italic": false,
@@ -166,3 +166,4 @@
     }
   ]
 }
+

@@ -47,7 +47,7 @@ export const HomePage: React.FC = () => {
           <div className={styles.dialogueBox}>
             <div className={styles.propRow}>
               <span className={styles.propLabel}>STUDENT</span>
-              <span className={styles.propValue}>박민우 (Minwoo Park)</span>
+              <span className={styles.propValue}>장민겸 (Mingyeom Jang)</span>
             </div>
             <div className={styles.propRow}>
               <span className={styles.propLabel}>CAREER GOAL</span>

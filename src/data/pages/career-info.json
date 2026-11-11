@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "cat-career-info",
   "title": "02. 진로정보",
   "slug": "career-info",
@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-11-04T12:00:00.000Z",
     "updatedAt": "2026-11-10T12:00:00.000Z",
-    "author": "박민우",
+    "author": "장민겸",
     "tags": ["진로정보", "직업정보", "진학정보", "채용동향", "로드맵"],
     "readingTimeMinutes": 5,
     "isUnconfirmedMigration": false
@@ -117,3 +117,5 @@
     }
   ]
 }
+
+

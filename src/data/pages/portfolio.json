@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-11-04T12:00:00.000Z",
     "updatedAt": "2026-11-10T12:00:00.000Z",
-    "author": "박민우",
+    "author": "장민겸",
     "tags": ["Portfolio", "Skills", "Hardware", "Firmware", "Showcase"],
     "readingTimeMinutes": 6,
     "isUnconfirmedMigration": false
@@ -22,7 +22,7 @@
       "richText": [
         {
           "type": "text",
-          "plainText": "Engineering Portfolio: Minwoo Park",
+          "plainText": "Engineering Portfolio: Mingyeom Jang (장민겸)",
           "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
         }
       ]
@@ -102,3 +102,4 @@
     }
   ]
 }
+

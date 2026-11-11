@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "page-project-stm32-robot-arm",
   "title": "프로젝트 02: STM32F4 & FreeRTOS 기반 4축 로봇팔 비전 시스템",
   "slug": "project-stm32-robot-arm",
@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-11-01T09:00:00.000Z",
     "updatedAt": "2026-11-10T18:00:00.000Z",
-    "author": "박민우",
+    "author": "장민겸",
     "tags": ["STM32F4", "FreeRTOS", "Robotics", "Embedded C", "Kinematics", "Vision"],
     "readingTimeMinutes": 6,
     "isUnconfirmedMigration": false
@@ -162,3 +162,5 @@
     }
   ]
 }
+
+

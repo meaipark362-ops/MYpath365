@@ -92,11 +92,11 @@
   --status-danger-border: rgba(224, 36, 68, 0.3);
 
   /* ==========================================================================
-     3. Typography & Editorial Scale
+     3. Typography & Editorial Scale (Apple SF Pro & Apple SD Gothic Neo)
      ========================================================================== */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, Menlo, monospace;
-  --font-serif: 'Newsreader', Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Apple SD Gothic Neo', 'Pretendard', sans-serif;
+  --font-mono: 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-serif: 'New York', -apple-system-ui-serif, 'Apple Garamond', Georgia, serif;
 
   --font-size-2xs: 0.6875rem; /* 11px */
   --font-size-xs: 0.75rem;    /* 12px */

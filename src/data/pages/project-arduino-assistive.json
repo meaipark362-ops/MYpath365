@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "page-project-arduino-assistive",
   "title": "프로젝트 01: Arduino 기반 시각장애인 초음파 촉각 보조 장치",
   "slug": "project-arduino-assistive",
@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-10-15T10:00:00.000Z",
     "updatedAt": "2026-11-01T15:00:00.000Z",
-    "author": "박민우",
+    "author": "장민겸",
     "tags": ["Arduino", "Hardware Assistive", "Ultrasonic", "Haptic", "Embedded C"],
     "readingTimeMinutes": 5,
     "isUnconfirmedMigration": false
@@ -198,3 +198,5 @@
     }
   ]
 }
+
+

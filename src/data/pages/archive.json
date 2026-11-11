@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "page-archive",
   "title": "ARCHIVE · 전체 학습 활동 및 타임라인 아카이브",
   "slug": "archive",
@@ -9,7 +9,7 @@
   "metadata": {
     "createdAt": "2026-11-04T12:00:00.000Z",
     "updatedAt": "2026-11-10T12:00:00.000Z",
-    "author": "박민우",
+    "author": "장민겸",
     "tags": ["Archive", "Timeline", "Filter", "History"],
     "readingTimeMinutes": 3,
     "isUnconfirmedMigration": false
@@ -78,3 +78,5 @@
     }
   ]
 }
+
+
