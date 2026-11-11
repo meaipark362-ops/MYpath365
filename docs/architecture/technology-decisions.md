@@ -76,3 +76,4 @@ AI 8이 최종 통합 시 생성/활성화할 표준 `package.json` 참조 스�
 - 원본 Notion 파일이 아직 프로젝트에 투입되지 않았으므로, 시스템은 **'Zero-Hallucination Migration Framework'**를 채택합니다.
 - AI 4는 스키마 명세에 부합하는 `schema-validator.ts`와 함께 마이그레이션 예시 템플릿(Page 1개: "MyPath365 Introduction [Unconfirmed Migration Structure]")만을 정적 파일로 생성하며, 추가적인 미확인 페이지는 일체 생성하지 않습니다.
 - 사용자가 실제 Notion HTML/Markdown/JSON Export 파일을 추가할 때 즉시 자동 마이그레이션 가능한 어댑터 파이프라인 구조를 선제적으로 설계합니다.
+

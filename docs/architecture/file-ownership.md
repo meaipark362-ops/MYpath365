@@ -71,3 +71,4 @@ AI 1~7은 다음 파일을 **직접 수정할 수 없습니다**. 오직 **AI 8(
 
 > **예외 규정 (AI 0의 초기 셋업)**:  
 > AI 0은 개발 조직이 시작될 수 있도록 baseline package 스펙 및 tsconfig 템플릿 제안을 아키텍처 문서(`technology-decisions.md`)에 작성하여 AI 8이 최종 통합 시 참고하도록 합니다.
+

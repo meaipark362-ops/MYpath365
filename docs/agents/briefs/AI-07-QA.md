@@ -55,3 +55,4 @@ AI 7은 `docs/architecture/interface-contracts.md`의 **Section 7 (QA Contract)*
 1. `tests/unit/` 하위 테스트 스위트 (콘텐츠 렌더러, 데이터 스키마, 유저 스토어) 작성 완료.
 2. `scripts/qa/` 하위 검증 스크립트 작성 완료.
 3. 종합 품질 감사 완료 및 `docs/reports/AI-07-report.md`에 결함 리포트, 접근성 점수, 최종 통합 적합성 서명 완료.
+

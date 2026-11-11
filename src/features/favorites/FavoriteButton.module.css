@@ -1,0 +1,49 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.1));
+  border-radius: var(--radius-md, 8px);
+  color: var(--text-secondary, #747b85);
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: var(--text-sm, 14px);
+  font-family: var(--font-sans, inherit);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.button:hover {
+  background: var(--bg-surface, #fbfbfa);
+  color: var(--text-primary, #101114);
+  border-color: var(--border-strong, rgba(16, 17, 20, 0.2));
+}
+
+.active {
+  color: #f59e0b; /* Amber gold */
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+.active:hover {
+  background: rgba(245, 158, 11, 0.1);
+  color: #d97706;
+}
+
+.iconOnly {
+  padding: 6px;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.starIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button:active .starIcon {
+  transform: scale(1.25);
+}

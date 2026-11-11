@@ -63,3 +63,4 @@ AI 3은 `docs/architecture/interface-contracts.md`의 **Section 3 (Data Contract
 3. 중첩된 블록(Nested Children: 예: 하위 불릿, 토글 내부 블록) 재귀 렌더링 지원.
 4. 에디토리얼 타이포그래피 규칙(행간 1.7, 가독성 여백) 준수.
 5. `docs/reports/AI-03-report.md`에 지원 블록 목록, 렌더링 예시, 폴백 정책 기록 완료.
+

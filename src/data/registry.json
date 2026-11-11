@@ -1,0 +1,11 @@
+[
+  {
+    "id": "unconfirmed-migration-root",
+    "title": "Welcome to MyPath365 (Unconfirmed Migration)",
+    "slug": "welcome-unconfirmed-migration",
+    "parentId": null,
+    "icon": "📌",
+    "order": 1,
+    "childPageIds": []
+  }
+]

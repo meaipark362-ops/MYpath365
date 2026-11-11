@@ -101,3 +101,4 @@ MyPath365/
 3. **PHASE 5**: AI 1~7의 개별 보고서(`docs/reports/AI-01-report.md` ~ `AI-07-report.md`) 완료 확인.
 4. **PHASE 6**: AI 8을 실행하여 보호 대상 파일 활성화 및 전체 직접 통합 진행.
 5. **PHASE 7**: 통합 빌드 및 QA 최종 서명 후 릴리스 완료.
+

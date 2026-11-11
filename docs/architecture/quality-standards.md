@@ -55,3 +55,4 @@
    - 블록 단위 및 페이지 단위 Error Boundary를 배치하여 하나의 불량 블록이 전체 페이지 렌더링을 중단시키지 않도록 격리.
 2. **Unknown Block Fallback**:
    - 미확인 또는 미지원 Notion 블록 발생 시 사용자에게 친절한 인라인 안내 배너(`UnknownBlock`)를 렌더링하고 원본 raw 데이터를 안전하게 보존.
+

@@ -1,0 +1,23 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: transparent;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.fill {
+  height: 100%;
+  background: var(--text-primary, #101114);
+  transition: width 0.1s ease-out;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.subtle {
+  background: var(--text-secondary, #747b85);
+  opacity: 0.6;
+}

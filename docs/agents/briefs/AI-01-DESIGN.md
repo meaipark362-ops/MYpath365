@@ -63,3 +63,4 @@ AI 1은 `docs/architecture/interface-contracts.md`의 **Section 2 (Design Contra
 3. 라이트 테마 및 다크 테마 변수 매핑 완성.
 4. WCAG AA 기준 명도 대비 충족.
 5. `docs/reports/AI-01-report.md`에 산출물 목록, CSS 토큰 가이드, 사용 예시 기록 완료.
+

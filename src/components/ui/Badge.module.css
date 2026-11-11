@@ -1,0 +1,61 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--tracking-tight);
+  white-space: nowrap;
+  border-radius: var(--radius-full);
+  line-height: 1;
+  border: 1px solid transparent;
+  transition: all var(--motion-duration-fast) var(--motion-ease-subtle);
+}
+
+/* Sizes */
+.size-sm {
+  font-size: var(--text-xs);
+  padding: 3px 8px;
+}
+
+.size-md {
+  font-size: var(--text-sm);
+  padding: 4px 10px;
+}
+
+/* Variants */
+.variant-default {
+  background-color: var(--accent-primary);
+  color: var(--accent-contrast);
+}
+
+.variant-outline {
+  background-color: transparent;
+  border-color: var(--border-medium);
+  color: var(--text-secondary);
+}
+
+.variant-subtle {
+  background-color: var(--interactive-hover);
+  color: var(--text-primary);
+  border-color: var(--border-subtle);
+}
+
+/* Status variants */
+.variant-success {
+  background-color: var(--status-success-bg);
+  color: var(--status-success-text);
+  border-color: var(--status-success-border);
+}
+
+.variant-warning {
+  background-color: var(--status-warning-bg);
+  color: var(--status-warning-text);
+  border-color: var(--status-warning-border);
+}
+
+.variant-danger {
+  background-color: var(--status-danger-bg);
+  color: var(--status-danger-text);
+  border-color: var(--status-danger-border);
+}

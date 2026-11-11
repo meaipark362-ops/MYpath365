@@ -1,0 +1,115 @@
+.header {
+  height: 56px;
+  min-height: 56px;
+  background-color: var(--bg-surface, #FBFBFA);
+  border-bottom: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-4, 16px);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(8px);
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3, 12px);
+  flex: 1;
+  min-width: 0;
+}
+
+.toggleButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm, 6px);
+  background: transparent;
+  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  color: var(--text-secondary, #575D66);
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms ease);
+}
+
+.toggleButton:hover {
+  background-color: var(--interactive-hover, rgba(16, 17, 20, 0.04));
+  color: var(--text-primary, #101114);
+}
+
+.titleArea {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.pageIcon {
+  font-size: 1.1rem;
+}
+
+.pageTitle {
+  font-size: var(--text-sm, 14px);
+  font-weight: var(--font-medium, 500);
+  color: var(--text-primary, #101114);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+}
+
+.searchTrigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+  padding: 6px 12px;
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  background-color: var(--bg-primary, #FFFFFF);
+  color: var(--text-muted, #8E9299);
+  font-size: var(--text-xs, 12px);
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms ease);
+}
+
+.searchTrigger:hover {
+  border-color: var(--border-strong, rgba(16, 17, 20, 0.24));
+  color: var(--text-primary, #101114);
+}
+
+.shortcutKbd {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 5px;
+  font-size: 10px;
+  font-family: var(--font-mono, monospace);
+  background-color: var(--bg-secondary, #F6F6F3);
+  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  border-radius: var(--radius-xs, 4px);
+  color: var(--text-secondary, #575D66);
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm, 6px);
+  color: var(--text-secondary, #575D66);
+  text-decoration: none;
+  transition: all var(--transition-fast, 150ms ease);
+}
+
+.navLink:hover {
+  background-color: var(--interactive-hover, rgba(16, 17, 20, 0.04));
+  color: var(--text-primary, #101114);
+}

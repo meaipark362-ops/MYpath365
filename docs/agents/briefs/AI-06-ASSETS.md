@@ -58,3 +58,4 @@ AI 6은 `docs/architecture/interface-contracts.md`의 **Section 6 (Asset Contrac
 2. `public/assets/placeholders/`에 커버 및 인라인용 세련된 SVG 플레이스홀더 배치.
 3. 이미지 에러 감지 및 자동 폴백 메커니즘 완성.
 4. `docs/reports/AI-06-report.md`에 에셋 구조, 폴백 이미지 명세, 사용 방법 기록 완료.
+

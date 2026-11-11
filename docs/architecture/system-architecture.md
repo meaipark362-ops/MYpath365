@@ -90,3 +90,4 @@
 1. **Zero Hallucination Policy**: 원본 Notion에서 명시적으로 확인되지 않은 데이터는 목업용 더미가 아닌 `[Unconfirmed Migration Structure]` 명찰을 달고 격리됩니다.
 2. **Strict Headless Content**: 모든 Notion 블록은 정규화된 데이터 객체로 존재하며, JSX 하드코딩을 절대 금지합니다.
 3. **No Direct Shared State Mutex**: 각 에이전트는 자신에게 할당된 폴더에만 쓰기 작업을 수행하며, 타인의 파일은 Read-Only 계약(Contract)으로만 참조합니다.
+

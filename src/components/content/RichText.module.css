@@ -1,0 +1,53 @@
+.richText {
+  display: inline;
+  word-break: break-word;
+}
+
+.bold {
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.underline.strikethrough {
+  text-decoration: underline line-through;
+}
+
+.code {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.875em;
+  padding: 0.15em 0.35em;
+  background-color: var(--interactive-hover, rgba(16, 17, 20, 0.05));
+  border-radius: var(--radius-xs, 4px);
+  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  color: var(--text-primary, #101114);
+}
+
+.link {
+  color: var(--text-primary, #101114);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity var(--motion-duration-fast, 150ms) ease;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.linkExternalIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+  opacity: 0.6;
+}

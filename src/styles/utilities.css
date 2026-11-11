@@ -1,0 +1,73 @@
+/**
+ * MyPath365 Utility Styles & Responsive Rules
+ * Container, Breakpoint utilities, reading columns
+ */
+
+/* Containers */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.container-reading {
+  max-width: var(--reading-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-main {
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Breakpoints Guide
+   xs: < 640px (Mobile)
+   sm: >= 640px (Large Mobile / Phablet)
+   md: >= 768px (Tablet)
+   lg: >= 1024px (Desktop)
+   xl: >= 1280px (Wide Desktop)
+*/
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+/* Visibility Utilities */
+.hide-mobile {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+/* Accessibility: Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

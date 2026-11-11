@@ -415,3 +415,4 @@ export interface QAAuditReport {
 1. 변경을 요청하는 AI는 `docs/reports/AI-XX-report.md`에 **[Contract Change Request]** 항목을 작성합니다.
 2. AI 0 또는 영향받는 파트너 AI의 승인 없이 인터페이스 파일의 breaking change를 직접 가하지 않습니다.
 3. 파라미터 추가 시에는 항상 optional(`?`)을 사용하여 하위 호환성을 유지합니다.
+

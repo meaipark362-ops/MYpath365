@@ -62,3 +62,4 @@ AI 5는 `docs/architecture/interface-contracts.md`의 **Section 5 (Interaction C
 3. 읽기 진행률 컴포넌트(`ProgressBar.tsx`) 및 훅 완성.
 4. 키보드 단축키 훅(`useKeyboardShortcut.ts`) 구현 완료.
 5. `docs/reports/AI-05-report.md`에 상태 모델, 검색 알고리즘 사양, 훅 사용 예시 기록 완료.
+

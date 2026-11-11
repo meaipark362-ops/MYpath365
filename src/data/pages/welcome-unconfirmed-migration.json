@@ -1,0 +1,141 @@
+{
+  "id": "unconfirmed-migration-root",
+  "title": "Welcome to MyPath365 (Unconfirmed Migration)",
+  "slug": "welcome-unconfirmed-migration",
+  "parentId": null,
+  "icon": "📌",
+  "coverImage": null,
+  "order": 1,
+  "metadata": {
+    "createdAt": "2026-11-04T12:00:00.000Z",
+    "updatedAt": "2026-11-04T12:00:00.000Z",
+    "author": "AI 4 Data Architect",
+    "tags": ["migration", "template", "contract"],
+    "readingTimeMinutes": 1,
+    "isUnconfirmedMigration": true
+  },
+  "blocks": [
+    {
+      "id": "blk-h1-1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Welcome to MyPath365",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "blk-callout-1",
+      "type": "callout",
+      "icon": "ℹ️",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "[Unconfirmed Migration Notice] Original Notion export files have not yet been placed in the repository. This page serves as a live structural placeholder validating AST serialization and rendering contracts.",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "blk-p-1",
+      "type": "paragraph",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "MyPath365 delivers a distraction-free, high-performance personal documentation experience separated into clean static content and dynamic user interaction states.",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "blk-h2-1",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Migration Verification Checklist",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "blk-todo-1",
+      "type": "to_do",
+      "checked": true,
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "TypeScript AST models & Zod schemas defined",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "blk-todo-2",
+      "type": "to_do",
+      "checked": false,
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Deposit official Notion Markdown/CSV/JSON export into project workspace",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "blk-unknown-1",
+      "type": "unknown",
+      "rawType": "notion_unsupported_plugin_widget",
+      "migrationNotice": "Unconfirmed Notion block preserved for future migration without data loss.",
+      "hasChildren": false,
+      "rawData": {
+        "legacyId": "legacy-widget-001",
+        "description": "Preserved raw block attributes"
+      }
+    }
+  ]
+}

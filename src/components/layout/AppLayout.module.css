@@ -1,0 +1,72 @@
+.shell {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-primary, #FFFFFF);
+  color: var(--text-primary, #101114);
+}
+
+.mainContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.contentWrapper {
+  flex: 1;
+  max-width: var(--content-max-width, 760px);
+  width: 100%;
+  padding: var(--space-6, 24px) var(--space-6, 24px) var(--space-12, 48px);
+  margin: 0 auto;
+}
+
+.asideToc {
+  width: 240px;
+  min-width: 240px;
+  padding: var(--space-6, 24px) var(--space-4, 16px);
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  max-height: calc(100vh - 56px);
+  overflow-y: auto;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-overlay, rgba(16, 17, 20, 0.45));
+  z-index: 35;
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 1024px) {
+  .asideToc {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .backdrop.open {
+    display: block;
+  }
+
+  .contentWrapper {
+    padding: var(--space-4, 16px) var(--space-4, 16px) var(--space-8, 32px);
+  }
+}

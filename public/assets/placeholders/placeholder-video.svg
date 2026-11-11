@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="video-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2025"/>
+      <stop offset="100%" stop-color="#121316"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="12" fill="url(#video-grad)" stroke="#2e313a" stroke-width="2"/>
+  <g transform="translate(400, 225)" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Pretendard', sans-serif">
+    <!-- Play button circle -->
+    <circle cx="0" cy="-15" r="32" fill="#2c2f38" stroke="#4a4f5d" stroke-width="2"/>
+    <polygon points="-8,-30 -8,0 16,-15" fill="#f6f6f3"/>
+    <text y="45" font-size="15" font-weight="500" fill="#a7a9ad">Video Placeholder</text>
+  </g>
+</svg>

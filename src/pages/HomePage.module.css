@@ -1,0 +1,111 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8, 32px);
+  animation: fadeIn var(--transition-normal, 250ms ease);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  border-bottom: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  padding-bottom: var(--space-6, 24px);
+}
+
+.badgeWrapper {
+  margin-bottom: var(--space-3, 12px);
+}
+
+.title {
+  font-size: var(--text-4xl, 2.5rem);
+  font-weight: var(--font-bold, 700);
+  color: var(--text-primary, #101114);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-3, 12px);
+}
+
+.subtitle {
+  font-size: var(--text-lg, 1.125rem);
+  color: var(--text-secondary, #575D66);
+  line-height: var(--line-height-relaxed, 1.75);
+  margin-bottom: var(--space-6, 24px);
+}
+
+.actionRow {
+  display: flex;
+  gap: var(--space-3, 12px);
+  flex-wrap: wrap;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4, 16px);
+}
+
+.sectionTitle {
+  font-size: var(--text-xl, 1.25rem);
+  font-weight: var(--font-semibold, 600);
+  color: var(--text-primary, #101114);
+  letter-spacing: -0.01em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4, 16px);
+}
+
+.pageCard {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2, 8px);
+  height: 100%;
+  transition: transform var(--transition-fast, 150ms ease), border-color var(--transition-fast, 150ms ease);
+}
+
+.pageCard:hover {
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+}
+
+.cardIcon {
+  font-size: 1.25rem;
+}
+
+.cardTitle {
+  font-size: var(--text-base, 1rem);
+  font-weight: var(--font-semibold, 600);
+  color: var(--text-primary, #101114);
+}
+
+.cardSlug {
+  font-size: var(--text-xs, 12px);
+  color: var(--text-muted, #8E9299);
+  font-family: var(--font-mono, monospace);
+}
+
+.noticeBox {
+  background-color: var(--bg-surface, #FBFBFA);
+  border: 1px dashed var(--border-medium, rgba(16, 17, 20, 0.14));
+  border-radius: var(--radius-md, 8px);
+  padding: var(--space-4, 16px);
+  font-size: var(--text-sm, 14px);
+  color: var(--text-secondary, #575D66);
+}

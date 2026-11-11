@@ -68,3 +68,4 @@ AI 4는 `docs/architecture/interface-contracts.md`의 **Section 3 (Data Contract
 3. 무단 데이터 날조 없이 공식 마이그레이션 플레이스홀더 구조 1종 구축.
 4. 스키마 유효성 검증 함수(`schema-validator.ts`) 완성.
 5. `docs/reports/AI-04-report.md`에 스키마 정의, 서비스 API 명세, 마이그레이션 가이드 기록 완료.
+
