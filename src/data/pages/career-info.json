@@ -1,0 +1,119 @@
+{
+  "id": "cat-career-info",
+  "title": "02. 진로정보",
+  "slug": "career-info",
+  "parentId": null,
+  "icon": "🧭",
+  "coverImage": null,
+  "order": 3,
+  "metadata": {
+    "createdAt": "2026-11-04T12:00:00.000Z",
+    "updatedAt": "2026-11-10T12:00:00.000Z",
+    "author": "박민우",
+    "tags": ["진로정보", "직업정보", "진학정보", "채용동향", "로드맵"],
+    "readingTimeMinutes": 5,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "ci-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "02. 목표 직무 분석 및 3개년 진로 로드맵",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ci-callout",
+      "type": "callout",
+      "icon": "🎯",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "목표 분야: 임베디드 리눅스 커널 개발자, MCU 펌웨어 엔지니어, 로보틱스 자율주행 제어 시스템 아키텍트",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ci-h2-1",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "1. 직무별 핵심 요구 역량",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ci-bullet-1",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Firmware Engineer: C/C++, ARM Cortex-M 레지스터 맵, 하드웨어 회로도 해석 및 오실로스코프 디버깅",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ci-bullet-2",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "RTOS System Engineer: FreeRTOS/Zephyr 선점형 스케줄링, 뮤텍스 및 세마포어 데드락 방지, 메모리 보호(MPU)",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ci-h2-2",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2. 단계별 학습 테크트리",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ci-todo-1",
+      "type": "to_do",
+      "hasChildren": false,
+      "checked": true,
+      "richText": [
+        { "type": "text", "plainText": "1단계 (기반 다지기): C언어 메모리 모델, 자료구조, 아두이노 센서 인터페이스 (완료)", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "ci-todo-2",
+      "type": "to_do",
+      "hasChildren": false,
+      "checked": false,
+      "richText": [
+        { "type": "text", "plainText": "2단계 (심화 임베디드): STM32F4 CubeIDE, HAL 드라이버 탈피 후 직접 레지스터 비트마스킹, FreeRTOS 적용 (진행중)", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "ci-todo-3",
+      "type": "to_do",
+      "hasChildren": false,
+      "checked": false,
+      "richText": [
+        { "type": "text", "plainText": "3단계 (시스템 & AI): 라즈베리파이 임베디드 리눅스 커널 빌드, 디바이스 드라이버 작성, TinyML 엣지 추론 (계획)", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    }
+  ]
+}

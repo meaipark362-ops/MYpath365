@@ -1,0 +1,168 @@
+{
+  "id": "page-home",
+  "title": "HOME · MyPath365 대시보드",
+  "slug": "home",
+  "parentId": null,
+  "icon": "⚡",
+  "coverImage": null,
+  "order": 1,
+  "metadata": {
+    "createdAt": "2026-11-11T12:00:00.000Z",
+    "updatedAt": "2026-11-11T12:00:00.000Z",
+    "author": "박민우 (Minwoo Park)",
+    "tags": ["Embedded Software", "RTOS", "Computer Architecture", "AI Robotics", "MCU"],
+    "readingTimeMinutes": 3,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "home-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "MyPath365 [박민우 · 임베디드 & 로봇 시스템]",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-callout-slogan",
+      "type": "callout",
+      "icon": "🎯",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "하드웨어의 물리적 한계 위에서 실시간성(RTOS)과 온디바이스 인공지능을 구현하는 임베디드 소프트웨어 엔지니어를 꿈꿉니다.",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-h2-goals",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "핵심 탐구 분야 및 진로 목표",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-p-intro",
+      "type": "paragraph",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "단순한 애플리케이션 코딩을 넘어 트랜지스터와 논리회로부터 레지스터, MCU 메모리 맵, 인터럽트 제어, 운영체제 커널의 태스크 스케줄링까지 시스템의 전 계층을 이해하는 엔지니어로 성장하고 있습니다.",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-todo-1",
+      "type": "to_do",
+      "hasChildren": false,
+      "checked": true,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Arduino 초음파 센서 & 진동 모터 기반 시각장애인 촉각 보조 장치 개발 (완료)",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-todo-2",
+      "type": "to_do",
+      "hasChildren": false,
+      "checked": true,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "ARM Cortex-M4 구조 및 C언어 포인터 메모리 계층 학습 (완료)",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-todo-3",
+      "type": "to_do",
+      "hasChildren": false,
+      "checked": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "STM32F401 & FreeRTOS 기반 4축 서보 로봇팔 비전 추적 시스템 구현 (진행중)",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "home-todo-4",
+      "type": "to_do",
+      "hasChildren": false,
+      "checked": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "TinyML 온디바이스 비전 모델 경량화 및 MCU 포팅 실험 (계획)",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    }
+  ]
+}

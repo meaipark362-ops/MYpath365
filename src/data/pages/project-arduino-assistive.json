@@ -1,0 +1,200 @@
+{
+  "id": "page-project-arduino-assistive",
+  "title": "프로젝트 01: Arduino 기반 시각장애인 초음파 촉각 보조 장치",
+  "slug": "project-arduino-assistive",
+  "parentId": "cat-career-activities",
+  "icon": "🦾",
+  "coverImage": null,
+  "order": 1,
+  "metadata": {
+    "createdAt": "2026-10-15T10:00:00.000Z",
+    "updatedAt": "2026-11-01T15:00:00.000Z",
+    "author": "박민우",
+    "tags": ["Arduino", "Hardware Assistive", "Ultrasonic", "Haptic", "Embedded C"],
+    "readingTimeMinutes": 5,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "proj1-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "시각장애인을 위한 웨어러블 초음파 거리 감지 & 촉각 햅틱 보조기구",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-callout-summary",
+      "type": "callout",
+      "icon": "📌",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "프로젝트 요약: 시각장애인이 보행 중 머리 및 상체 높이의 장애물을 감지하지 못하는 한계를 해결하기 위해, 손목 또는 가슴에 착용하는 저전력 초음파 거리 측정 및 진동 피드백 모듈을 설계·제작하였습니다.",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-h2-tech",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "1. 기술 스택 및 회로 구성",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-bullet-1",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "MCU: ATmega328P (Arduino Pro Mini 3.3V 저전력 구동)",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-bullet-2",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "센서: HC-SR04 초음파 거리 센서 (트리거 펄스 및 에코 타이머 측정)",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-bullet-3",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "출력 액추에이터: ERM 코인 진동 모터 (거리 반비례 PWM 진동 세기 변조)",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-h2-code",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2. 핵심 타이머 인터럽트 로직",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-code-block",
+      "type": "code",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "// 거리 비례 햅틱 피드백 알고리즘\nfloat distance = (duration * 0.0343) / 2;\nif (distance > 0 && distance < 150) {\n  // 150cm 이내 장애물 감지 시 거리가 가까울수록 고주파 펄스 진동\n  int pwmDuty = map(distance, 10, 150, 255, 60);\n  analogWrite(VIB_PIN, pwmDuty);\n} else {\n  analogWrite(VIB_PIN, 0);\n}",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-h2-learned",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "3. 트러블슈팅 및 배운 점",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "proj1-quote",
+      "type": "quote",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "\"delay()를 사용한 지연 처리는 센서 반응성을 크게 떨어뜨렸습니다. millis() 타이머와 하드웨어 인터럽트를 활용하여 비동기 논블로킹(Non-blocking) 센싱 루프를 구현함으로써 응답 속도를 40ms 이내로 단축시켰습니다.\"",
+          "annotations": {
+            "bold": false,
+            "italic": true,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    }
+  ]
+}

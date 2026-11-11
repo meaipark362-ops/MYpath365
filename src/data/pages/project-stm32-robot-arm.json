@@ -1,0 +1,164 @@
+{
+  "id": "page-project-stm32-robot-arm",
+  "title": "프로젝트 02: STM32F4 & FreeRTOS 기반 4축 로봇팔 비전 시스템",
+  "slug": "project-stm32-robot-arm",
+  "parentId": "cat-career-activities",
+  "icon": "🤖",
+  "coverImage": null,
+  "order": 2,
+  "metadata": {
+    "createdAt": "2026-11-01T09:00:00.000Z",
+    "updatedAt": "2026-11-10T18:00:00.000Z",
+    "author": "박민우",
+    "tags": ["STM32F4", "FreeRTOS", "Robotics", "Embedded C", "Kinematics", "Vision"],
+    "readingTimeMinutes": 6,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "stm-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "STM32F401RE & FreeRTOS 기반 실시간 다축 로봇 매니퓰레이터 제어",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stm-callout-status",
+      "type": "callout",
+      "icon": "⚡",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "[진행중인 연구] ARM Cortex-M4 코어를 기반으로 역기구학(Inverse Kinematics) 연산과 4개 서보 모터의 PWM 듀티 제어를 분리된 RTOS 태스크로 동시 구동하는 프로젝트입니다.",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stm-h2-arch",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "1. 실시간 태스크 아키텍처 (RTOS Architecture)",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stm-bullet-1",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Task 1 (Priority: High / 20ms 주기): 카메라 비전 모듈로부터의 UART 좌표 데이터 패킷 수신 및 CRC 검증",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stm-bullet-2",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Task 2 (Priority: Medium / 50ms 주기): 기구학 역산(IK Solver)을 통한 각 관절별 서보 타겟 각도 계산",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stm-bullet-3",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Task 3 (Priority: Realtime / Hardware Timer): TIM2/TIM3 PWM 4채널 직접 레지스터 매핑 제어",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stm-h2-code",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2. FreeRTOS 태스크 생성 및 큐 통신 코드",
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "stm-code-block",
+      "type": "code",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "// 비전 좌표 전달을 위한 FreeRTOS Queue 생성\nQueueHandle_t xCoordQueue;\ntypedef struct {\n  int16_t x;\n  int16_t y;\n  int16_t z;\n} VisionTarget_t;\n\nvoid vTaskVisionParse(void *pvParameters) {\n  VisionTarget_t target;\n  for(;;) {\n    if (parseUartVisionPacket(&target) == STATUS_OK) {\n      xQueueSend(xCoordQueue, &target, portMAX_DELAY);\n    }\n    vTaskDelay(pdMS_TO_TICKS(20));\n  }\n}",
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true
+          }
+        }
+      ]
+    }
+  ]
+}

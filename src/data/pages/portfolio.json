@@ -1,0 +1,104 @@
+{
+  "id": "page-portfolio",
+  "title": "PORTFOLIO · 임베디드 & 로봇 시스템 엔지니어링 포트폴리오",
+  "slug": "portfolio",
+  "parentId": null,
+  "icon": "💼",
+  "coverImage": null,
+  "order": 6,
+  "metadata": {
+    "createdAt": "2026-11-04T12:00:00.000Z",
+    "updatedAt": "2026-11-10T12:00:00.000Z",
+    "author": "박민우",
+    "tags": ["Portfolio", "Skills", "Hardware", "Firmware", "Showcase"],
+    "readingTimeMinutes": 6,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "port-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "Engineering Portfolio: Minwoo Park",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "port-callout",
+      "type": "callout",
+      "icon": "⚡",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "본 포트폴리오는 하드웨어 회로 설계부터 펌웨어 레지스터 제어, FreeRTOS 실시간 스케줄링, 온디바이스 컴퓨터 비전 인터페이스까지 종합적인 임베디드 시스템 엔지니어링 역량을 증명합니다.",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "port-h2-skills",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "1. 핵심 기술 스택 및 역량 (Core Competencies)",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "port-bullet-1",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "MCU & Architecture: STM32 (ARM Cortex-M4), ATmega328P, RISC-V 기초, 레지스터 직접 제어", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "port-bullet-2",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "Firmware & OS: Embedded C, C++, FreeRTOS (Task, Queue, Semaphore), Linux Kernel Internals", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "port-bullet-3",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "Protocols & Hardware: UART, SPI, I2C, PWM, 하드웨어 타이머 인터럽트, 오실로스코프 신호 분석", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "port-h2-proj",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2. 대표 프로젝트 요약",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "port-quote",
+      "type": "quote",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "• 시각장애인용 초음파 촉각 보조 장치 (Arduino/HC-SR04/ERM, 교내 우수상)\n• STM32 & FreeRTOS 4축 로봇팔 비전 제어기 (비동기 UART 큐 & 실시간 PWM)",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    }
+  ]
+}

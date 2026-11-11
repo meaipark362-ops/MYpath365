@@ -31,4 +31,7 @@ export interface PageRegistryItem {
   icon?: string | null;
   order: number;
   childPageIds: string[];
+  category?: string;
+  timestamp?: string;
+  status?: string;
 }

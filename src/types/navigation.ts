@@ -9,6 +9,9 @@ export interface NavigationNode {
   order: number;
   children: NavigationNode[];
   depth: number;
+  category?: string;
+  timestamp?: string;
+  status?: string;
 }
 
 export interface BreadcrumbItem {

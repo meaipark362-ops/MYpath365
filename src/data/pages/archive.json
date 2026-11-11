@@ -1,0 +1,80 @@
+{
+  "id": "page-archive",
+  "title": "ARCHIVE · 전체 학습 활동 및 타임라인 아카이브",
+  "slug": "archive",
+  "parentId": null,
+  "icon": "🗄️",
+  "coverImage": null,
+  "order": 7,
+  "metadata": {
+    "createdAt": "2026-11-04T12:00:00.000Z",
+    "updatedAt": "2026-11-10T12:00:00.000Z",
+    "author": "박민우",
+    "tags": ["Archive", "Timeline", "Filter", "History"],
+    "readingTimeMinutes": 3,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "arch-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "전체 활동 및 학습 이력 아카이브",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "arch-callout",
+      "type": "callout",
+      "icon": "🗂️",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "진로수업, 탐구활동, 프로젝트, 독서기록의 모든 발자국이 시간 순서대로 기록되어 있으며, 카테고리별 필터 및 글로벌 검색(⌘K)으로 즉시 접근할 수 있습니다.",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "arch-h2",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "누적 활동 타임라인 통계",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "arch-bullet-1",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "완료된 활동 및 프로젝트: 14건", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "arch-bullet-2",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "현재 진행 중인 연구: 3건 (STM32 로봇팔, TinyML 모델, RTOS 커널 세미나)", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "arch-bullet-3",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "독서 발자국: 전공 서적 2권 완독 및 12개 챕터 분석 노트", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    }
+  ]
+}

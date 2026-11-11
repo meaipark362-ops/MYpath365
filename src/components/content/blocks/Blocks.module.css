@@ -102,15 +102,15 @@
 }
 
 .todoCheckbox:checked {
-  background-color: var(--text-primary, #101114);
-  border-color: var(--text-primary, #101114);
+  background-color: var(--color-red, #E02444);
+  border-color: var(--color-red, #E02444);
 }
 
 .todoCheckbox:checked::after {
   content: '';
   width: 4px;
   height: 8px;
-  border: solid var(--bg-primary, #ffffff);
+  border: solid #ffffff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   margin-bottom: 2px;
@@ -171,10 +171,11 @@
   display: flex;
   gap: var(--space-3, 12px);
   margin: var(--space-3, 12px) 0;
-  padding: var(--space-4, 16px);
-  background-color: var(--bg-surface, #FBFBFA);
-  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
-  border-radius: var(--radius-md, 10px);
+  padding: 14px 16px;
+  background-color: var(--bg-surface, #161820);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  border-left: 3px solid var(--color-red-bright, #FF2E56);
+  border-radius: var(--radius-sm, 5px);
 }
 
 .calloutIcon {
@@ -189,18 +190,20 @@
   font-family: var(--font-sans);
   font-size: var(--text-base, 1rem);
   line-height: var(--line-height-body, 1.72);
+  color: var(--text-primary, #F4F5F8);
 }
 
 /* Quote */
 .quote {
   margin: var(--space-3, 12px) 0;
-  padding: var(--space-1, 4px) 0 var(--space-1, 4px) var(--space-4, 16px);
-  border-left: 3px solid var(--text-primary, #101114);
+  padding: 6px 0 6px 16px;
+  border-left: 3px solid var(--color-red-bright, #FF2E56);
   font-family: var(--font-serif, Georgia, serif);
   font-size: var(--text-lg, 1.125rem);
   font-style: italic;
   line-height: var(--line-height-body, 1.72);
-  color: var(--text-secondary, #575D66);
+  color: var(--text-secondary, #9DA1AF);
+  background: rgba(224, 36, 68, 0.03);
 }
 
 /* Divider */

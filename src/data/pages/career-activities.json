@@ -1,0 +1,96 @@
+{
+  "id": "cat-career-activities",
+  "title": "03. 진로활동",
+  "slug": "career-activities",
+  "parentId": null,
+  "icon": "🛠️",
+  "coverImage": null,
+  "order": 4,
+  "metadata": {
+    "createdAt": "2026-11-04T12:00:00.000Z",
+    "updatedAt": "2026-11-10T12:00:00.000Z",
+    "author": "박민우",
+    "tags": ["진로활동", "동아리", "하드웨어프로젝트", "경진대회"],
+    "readingTimeMinutes": 5,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "ca-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "03. 자율 탐구, 프로젝트 및 경진대회 성과",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ca-callout",
+      "type": "callout",
+      "icon": "⚙️",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "교내 로보틱스 동아리 활동과 2대 핵심 하드웨어 개발 프로젝트(Arduino 촉각 보조기구, STM32 로봇팔)의 누적 성과 보고서입니다.",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ca-h2-1",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "1. 주요 하드웨어 프로젝트 산출물",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ca-bullet-1",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "Project A: Arduino 기반 시각장애인 초음파 촉각 햅틱 보조 장치 (프로토타입 제작 및 착용 테스트 완료)", "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "ca-bullet-2",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "Project B: STM32F401 & FreeRTOS 기반 4축 로봇팔 및 실시간 영상 객체 추적 제어 (역기구학 연산 구현 진행중)", "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "ca-h2-2",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2. 대회 및 수상 결과",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "ca-quote-award",
+      "type": "quote",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2026 교내 공학 메이커스 아이디어 경진대회 우수상 수상 (초음파 햅틱 보조 장치 부문 - 심사위원 하드웨어 완성도 및 사회적 가치 호평)",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    }
+  ]
+}

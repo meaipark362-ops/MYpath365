@@ -1,0 +1,96 @@
+{
+  "id": "cat-reading-footprint",
+  "title": "04. 독서발자국",
+  "slug": "reading-footprint",
+  "parentId": null,
+  "icon": "📖",
+  "coverImage": null,
+  "order": 5,
+  "metadata": {
+    "createdAt": "2026-11-04T12:00:00.000Z",
+    "updatedAt": "2026-11-10T12:00:00.000Z",
+    "author": "박민우",
+    "tags": ["독서", "컴퓨터구조", "리눅스커널", "필사", "인사이트"],
+    "readingTimeMinutes": 5,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "rf-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "04. 독서발자국: 하드웨어 밑바닥에서 얻은 엔지니어링 인사이트",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "rf-callout",
+      "type": "callout",
+      "icon": "🔖",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "전문 엔지니어로 성장하기 위해 컴퓨터 밑바닥(아키텍처, 커널, 메모리 구조)을 다룬 전공 도서를 정독하고, 주요 구절 필사 및 내재화 기록을 남깁니다.",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "rf-h2-1",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "1. 핵심 완독 도서 목록",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "rf-bullet-1",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "《컴퓨터 밑바닥의 비밀》 (루샤오펑 저) - CPU 파이프라인, 분기 예측, 메모리 정렬과 캐시 미스 최소화 전략", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "rf-bullet-2",
+      "type": "bulleted_list_item",
+      "hasChildren": false,
+      "richText": [
+        { "type": "text", "plainText": "《코드로 알아보는 ARM 리눅스 커널 구조》 (강경민 저) - 부트스트랩, 페이지 테이블 매핑, 태스크 스위칭과 인터럽트 핸들러", "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false } }
+      ]
+    },
+    {
+      "id": "rf-h2-2",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2. 인상 깊은 문장 & 필사",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "rf-quote-1",
+      "type": "quote",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "\"프로그래머가 작성한 고수준의 코드가 아름답다고 해서, CPU가 그것을 효율적으로 실행할 것이라 착각해서는 안 된다. 진정한 최적화는 L1/L2 캐시 라인 크기와 정렬(Alignment)을 이해하는 순간부터 시작된다.\"",
+          "annotations": { "bold": false, "italic": true, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    }
+  ]
+}

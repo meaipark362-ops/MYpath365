@@ -1,195 +1,153 @@
 /**
- * MyPath365 Design Tokens
+ * MyPath365 Design Tokens — HERMES AI Inspired Theme
  * 
- * Philosophy:
- * - Obsidian: #101114 (Deep, rich neutral tone)
- * - Ivory: #F6F6F3 (Soft, tactile paper-white tone)
- * - Silver: #A7A9AD (Polished secondary metal tone)
- * - Slate: #747B85 (Readable neutral gray tone)
- * - Premium Minimal: Subpixel borders, subtle elevation, generous whitespace, strict hierarchy
+ * Palette:
+ * - Pure Black: #090A0D (Deep obsidian canvas)
+ * - Dark Charcoal: #101116 (Subtle pane background)
+ * - Surface Charcoal: #161820 (Elevated card/panel/input)
+ * - Elevated Slate: #1E212B (Hover states, borders)
+ * - Electric Red / Crimson: #E02444 (HERMES signature accent, glow, badges)
+ * - Radiant Red: #FF2E56 (Bright active indicators, cursor focus)
+ * - Crisp White: #F4F5F8 (Primary high-contrast editorial text)
+ * - Slate Neutral: #8E929E (Secondary metadata & labels)
+ * - Muted Neutral: #525663 (Subtle borders, inactive hints)
  */
 
 :root {
   /* ==========================================================================
-     1. Primitive Color Palette
+     1. Primitive Color Palette (Black + Charcoal + Electric Red)
      ========================================================================== */
-  --color-obsidian: #101114;
-  --color-obsidian-subtle: #18191D;
-  --color-obsidian-elevated: #22242A;
-  
+  --color-obsidian: #090A0D;
   --color-ivory: #F6F6F3;
-  --color-ivory-light: #FBFBFA;
-  --color-white: #FFFFFF;
-  
   --color-silver: #A7A9AD;
-  --color-silver-light: #D1D3D7;
   --color-slate: #747B85;
-  --color-slate-dark: #4A4F57;
+  --color-charcoal-deep: #101116;
+  --color-charcoal-surface: #161820;
+  --color-charcoal-elevated: #1E212B;
+  --color-charcoal-highlight: #282C3A;
+
+  --color-red: #E02444;
+  --color-red-bright: #FF2E56;
+  --color-red-glow: rgba(224, 36, 68, 0.28);
+  --color-red-subtle: rgba(224, 36, 68, 0.12);
+  --color-red-border: rgba(224, 36, 68, 0.45);
+
+  --color-white: #FFFFFF;
+  --color-text-main: #F4F5F8;
+  --color-text-sub: #9DA1AF;
+  --color-text-muted: #5C6070;
 
   /* Functional Status Primitives */
-  --color-success: #1D8A54;
-  --color-success-subtle: rgba(29, 138, 84, 0.12);
-  --color-warning: #B3710E;
-  --color-warning-subtle: rgba(179, 113, 14, 0.12);
-  --color-danger: #D63939;
-  --color-danger-subtle: rgba(214, 57, 57, 0.12);
-  --color-info: #2B6CB0;
-  --color-info-subtle: rgba(43, 108, 176, 0.12);
+  --color-success: #10B981;
+  --color-success-subtle: rgba(16, 185, 129, 0.14);
+  --color-warning: #F59E0B;
+  --color-warning-subtle: rgba(245, 158, 11, 0.14);
+  --color-danger: #E02444;
+  --color-danger-subtle: rgba(224, 36, 68, 0.14);
+  --color-info: #3B82F6;
+  --color-info-subtle: rgba(59, 130, 246, 0.14);
 
   /* ==========================================================================
-     2. Semantic Colors (Default Light Theme)
+     2. Semantic Colors (HERMES Dark Mode Default)
      ========================================================================== */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F6F6F3;
-  --bg-surface: #FBFBFA;
-  --bg-elevated: #FFFFFF;
-  --bg-overlay: rgba(16, 17, 20, 0.45);
-  
-  --text-primary: #101114;
-  --text-secondary: #575D66;
-  --text-muted: #8E9299;
+  --bg-primary: #090A0D;
+  --bg-secondary: #101116;
+  --bg-surface: #161820;
+  --bg-elevated: #1E212B;
+  --bg-glass: rgba(16, 17, 22, 0.88);
+  --bg-overlay: rgba(5, 6, 8, 0.78);
+
+  --text-primary: #F4F5F8;
+  --text-secondary: #9DA1AF;
+  --text-muted: #5C6070;
   --text-contrast: #FFFFFF;
+  --text-accent: #FF2E56;
 
-  --border-subtle: rgba(16, 17, 20, 0.08);
-  --border-medium: rgba(16, 17, 20, 0.14);
-  --border-strong: rgba(16, 17, 20, 0.24);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.24);
+  --border-accent: rgba(224, 36, 68, 0.55);
 
-  --accent-primary: #101114;
+  --accent-primary: #E02444;
   --accent-contrast: #FFFFFF;
-  --accent-hover: #22242A;
-  --interactive-hover: rgba(16, 17, 20, 0.04);
-  --interactive-active: rgba(16, 17, 20, 0.08);
+  --accent-hover: #FF2E56;
+  --accent-glow: 0 0 16px rgba(224, 36, 68, 0.35);
 
-  --focus-ring: rgba(16, 17, 20, 0.85);
-  --focus-ring-offset: #FFFFFF;
+  --interactive-hover: rgba(255, 255, 255, 0.04);
+  --interactive-active: rgba(224, 36, 68, 0.12);
 
-  --status-success-text: #166A40;
-  --status-success-bg: rgba(29, 138, 84, 0.1);
-  --status-success-border: rgba(29, 138, 84, 0.25);
+  --focus-ring: rgba(224, 36, 68, 0.75);
+  --focus-ring-offset: #090A0D;
 
-  --status-warning-text: #8E5A0B;
-  --status-warning-bg: rgba(179, 113, 14, 0.1);
-  --status-warning-border: rgba(179, 113, 14, 0.25);
-
-  --status-danger-text: #B52727;
-  --status-danger-bg: rgba(214, 57, 57, 0.1);
-  --status-danger-border: rgba(214, 57, 57, 0.25);
-
-  /* ==========================================================================
-     3. Spacing System (8pt Grid with Micro Steps)
-     ========================================================================== */
-  --space-0: 0px;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 20px;
-  --space-6: 24px;
-  --space-8: 32px;
-  --space-10: 40px;
-  --space-12: 48px;
-  --space-16: 64px;
-  --space-20: 80px;
-
-  /* ==========================================================================
-     4. Layout & Dimensions
-     ========================================================================== */
-  --sidebar-width: 260px;
-  --sidebar-collapsed-width: 64px;
-  --header-height: 56px;
-  --content-max-width: 900px;
-  --reading-max-width: 720px;
-  --toc-width: 220px;
-
-  /* ==========================================================================
-     5. Border Radius & Borders
-     ========================================================================== */
-  --radius-xs: 4px;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-full: 9999px;
-
-  --border-width-hairline: 1px;
-  --border-width-focus: 2px;
-
-  /* ==========================================================================
-     6. Shadows & Elevations (Apple/Linear Subpixel Diffuse Shadows)
-     ========================================================================== */
-  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.04), 0 0 0 1px var(--border-subtle);
-  --shadow-card: 0 2px 6px -1px rgba(0, 0, 0, 0.05), 0 1px 3px -1px rgba(0, 0, 0, 0.03), 0 0 0 1px var(--border-subtle);
-  --shadow-elevation: 0 10px 30px -4px rgba(0, 0, 0, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.04), 0 0 0 1px var(--border-subtle);
-  --shadow-popover: 0 20px 40px -8px rgba(0, 0, 0, 0.12), 0 8px 16px -4px rgba(0, 0, 0, 0.06), 0 0 0 1px var(--border-medium);
-
-  /* ==========================================================================
-     7. Z-Index Layering
-     ========================================================================== */
-  --z-base: 0;
-  --z-card: 1;
-  --z-sticky: 10;
-  --z-header: 100;
-  --z-sidebar: 200;
-  --z-backdrop: 500;
-  --z-modal: 1000;
-  --z-popover: 1100;
-  --z-tooltip: 1200;
-
-  /* ==========================================================================
-     8. Motion & Animations
-     ========================================================================== */
-  --motion-duration-fast: 150ms;
-  --motion-duration-normal: 220ms;
-  --motion-duration-slow: 350ms;
-  
-  --motion-ease-subtle: cubic-bezier(0.16, 1, 0.3, 1);     /* Apple standard ease-out */
-  --motion-ease-in: cubic-bezier(0.4, 0, 1, 1);
-  --motion-ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --motion-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-/* ==========================================================================
-   Dark Theme Variant
-   ========================================================================== */
-[data-theme="dark"] {
-  --bg-primary: #101114;
-  --bg-secondary: #18191D;
-  --bg-surface: #1E2025;
-  --bg-elevated: #262930;
-  --bg-overlay: rgba(0, 0, 0, 0.75);
-
-  --text-primary: #F6F6F3;
-  --text-secondary: #A7A9AD;
-  --text-muted: #747B85;
-  --text-contrast: #101114;
-
-  --border-subtle: rgba(246, 246, 243, 0.08);
-  --border-medium: rgba(246, 246, 243, 0.15);
-  --border-strong: rgba(246, 246, 243, 0.28);
-
-  --accent-primary: #F6F6F3;
-  --accent-contrast: #101114;
-  --accent-hover: #E2E2DE;
-  --interactive-hover: rgba(246, 246, 243, 0.06);
-  --interactive-active: rgba(246, 246, 243, 0.12);
-
-  --focus-ring: rgba(246, 246, 243, 0.85);
-  --focus-ring-offset: #101114;
-
-  --status-success-text: #4ADE80;
-  --status-success-bg: rgba(74, 222, 128, 0.12);
-  --status-success-border: rgba(74, 222, 128, 0.25);
+  --status-success-text: #34D399;
+  --status-success-bg: rgba(16, 185, 129, 0.12);
+  --status-success-border: rgba(16, 185, 129, 0.3);
 
   --status-warning-text: #FBBF24;
-  --status-warning-bg: rgba(251, 191, 36, 0.12);
-  --status-warning-border: rgba(251, 191, 36, 0.25);
+  --status-warning-bg: rgba(245, 158, 11, 0.12);
+  --status-warning-border: rgba(245, 158, 11, 0.3);
 
-  --status-danger-text: #F87171;
-  --status-danger-bg: rgba(248, 113, 113, 0.12);
-  --status-danger-border: rgba(248, 113, 113, 0.25);
+  --status-danger-text: #FF4D6D;
+  --status-danger-bg: rgba(224, 36, 68, 0.12);
+  --status-danger-border: rgba(224, 36, 68, 0.3);
 
-  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--border-subtle);
-  --shadow-card: 0 2px 6px -1px rgba(0, 0, 0, 0.4), 0 1px 3px -1px rgba(0, 0, 0, 0.2), 0 0 0 1px var(--border-subtle);
-  --shadow-elevation: 0 12px 36px -4px rgba(0, 0, 0, 0.6), 0 4px 12px -2px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--border-subtle);
-  --shadow-popover: 0 24px 48px -8px rgba(0, 0, 0, 0.7), 0 8px 18px -4px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--border-medium);
+  /* ==========================================================================
+     3. Typography & Editorial Scale
+     ========================================================================== */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, Menlo, monospace;
+  --font-serif: 'Newsreader', Georgia, serif;
+
+  --font-size-2xs: 0.6875rem; /* 11px */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.8125rem;  /* 13px */
+  --font-size-base: 0.875rem;  /* 14px */
+  --font-size-md: 0.9375rem;  /* 15px */
+  --font-size-lg: 1.0625rem;  /* 17px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.4;
+  --line-height-normal: 1.55;
+  --line-height-relaxed: 1.7;
+
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.04em;
+  --letter-spacing-wider: 0.08em;
+
+  /* ==========================================================================
+     4. Geometry, Shadows & Elevation
+     ========================================================================== */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.7);
+  --shadow-glow-red: 0 0 20px rgba(224, 36, 68, 0.22);
+  --shadow-outline-red: 0 0 0 1px rgba(224, 36, 68, 0.65);
+
+  --transition-fast: 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 320ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  --max-content-width: 960px;
+  --content-max-width: 960px;
+  --line-height-body: 1.7;
+  --sidebar-width: 270px;
+  --header-height: 48px;
+  --bottom-bar-height: 54px;
 }

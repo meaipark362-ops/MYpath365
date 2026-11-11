@@ -1,0 +1,116 @@
+{
+  "id": "cat-career-classes",
+  "title": "01. 진로수업",
+  "slug": "career-classes",
+  "parentId": null,
+  "icon": "📚",
+  "coverImage": null,
+  "order": 2,
+  "metadata": {
+    "createdAt": "2026-11-04T12:00:00.000Z",
+    "updatedAt": "2026-11-10T12:00:00.000Z",
+    "author": "박민우",
+    "tags": ["진로수업", "마이크로프로세서", "진로검사", "모둠활동"],
+    "readingTimeMinutes": 4,
+    "isUnconfirmedMigration": false
+  },
+  "blocks": [
+    {
+      "id": "cc-h1",
+      "type": "heading_1",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "01. 교과 연계 진로수업 및 공학 탐구 기록",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "cc-callout",
+      "type": "callout",
+      "icon": "📝",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "정규 교과 수업 중 정보과학, 물리학, 공학 일반 과목과 연계하여 하드웨어 설계 원리와 논리 회로 동작을 심도 있게 탐구한 활동 기록입니다.",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "cc-h2-1",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "1. 수업활동: 마이크로프로세서와 논리회로",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "cc-p-1",
+      "type": "paragraph",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "불 대수(Boolean Algebra)와 플립플롭(Flip-Flop)을 기반으로 4비트 덧셈기 및 레지스터 회로를 브레드보드에 직접 결선하여 컴퓨터 CPU의 기본 연산 단위를 검증하였습니다.",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "cc-h2-2",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "2. 모둠활동: I2C 버스 다중 통신 네트워크 과제",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "cc-p-2",
+      "type": "paragraph",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "3인의 팀원과 함께 1개의 마스터 MCU에서 3개의 슬레이브 센서 모듈(온습도, 조도, 가속도)을 단 2개의 통신 라인(SDA, SCL)으로 제어하는 버스 프로토콜을 구현하였습니다.",
+          "annotations": { "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "cc-h2-3",
+      "type": "heading_2",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "3. 진로 종합 적성 검사 결과",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    },
+    {
+      "id": "cc-quote",
+      "type": "quote",
+      "hasChildren": false,
+      "richText": [
+        {
+          "type": "text",
+          "plainText": "공학계열 적합도 98% (수리적 문제 해결 및 기계-소프트웨어 융합 시스템 설계 부문 최상위 백분위 기록)",
+          "annotations": { "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false }
+        }
+      ]
+    }
+  ]
+}
