@@ -20,8 +20,28 @@ export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement>
   children: React.ReactNode;
 }
 
+export const getBasePath = (): string => {
+  if (typeof window === 'undefined') return '';
+  const segments = window.location.pathname.split('/').filter(Boolean);
+  const knownRoots = ['search', 'settings', 'favorites', 'page'];
+  if (segments.length > 0 && !knownRoots.includes(segments[0])) {
+    return '/' + segments[0];
+  }
+  return '';
+};
+
+export const normalizePath = (rawPath: string, basePath: string): string => {
+  if (basePath && rawPath.startsWith(basePath)) {
+    const stripped = rawPath.slice(basePath.length);
+    return stripped.startsWith('/') ? stripped : '/' + stripped;
+  }
+  return rawPath || '/';
+};
+
 export const Link: React.FC<LinkProps> = ({ to, className, children, onClick, ...rest }) => {
   const { navigate } = useRouter();
+  const basePath = getBasePath();
+  const resolvedHref = basePath ? `${basePath}${to.startsWith('/') ? to : '/' + to}` : to;
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (onClick) onClick(e);
@@ -32,7 +52,7 @@ export const Link: React.FC<LinkProps> = ({ to, className, children, onClick, ..
   };
 
   return (
-    <a href={to} className={className} onClick={handleClick} {...rest}>
+    <a href={resolvedHref} className={className} onClick={handleClick} {...rest}>
       {children}
     </a>
   );
@@ -76,17 +96,19 @@ function matchRoute(pattern: string, pathname: string): Record<string, string> |
 }
 
 export const Router: React.FC<RouterProps> = ({ routes, fallback: FallbackComponent }) => {
+  const basePath = getBasePath();
   const [currentPath, setCurrentPath] = useState<string>(() => {
     if (typeof window !== 'undefined') {
-      return window.location.pathname || '/';
+      return normalizePath(window.location.pathname || '/', basePath);
     }
     return '/';
   });
 
   const navigate = (to: string) => {
     if (typeof window !== 'undefined') {
-      if (window.location.pathname !== to) {
-        window.history.pushState({}, '', to);
+      const fullTarget = basePath ? `${basePath}${to.startsWith('/') ? to : '/' + to}` : to;
+      if (window.location.pathname !== fullTarget) {
+        window.history.pushState({}, '', fullTarget);
       }
       setCurrentPath(to);
       window.scrollTo(0, 0);
@@ -95,12 +117,12 @@ export const Router: React.FC<RouterProps> = ({ routes, fallback: FallbackCompon
 
   useEffect(() => {
     const handlePopState = () => {
-      setCurrentPath(window.location.pathname || '/');
+      setCurrentPath(normalizePath(window.location.pathname || '/', basePath));
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  }, [basePath]);
 
   // Find matching route
   let matchedComponent: React.ComponentType<{ params: Record<string, string> }> | null = null;
