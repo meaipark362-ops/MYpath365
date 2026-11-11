@@ -8,9 +8,28 @@
     <meta name="description" content="Personal branding and career engineering portfolio for Embedded Software & AI Robotics." />
     <!-- Fonts -->
     <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <!-- Production Bundle Styles -->
+    <link rel="stylesheet" crossorigin href="./assets/index-C8qovGGR.css" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Production Bundle Execution for GitHub Pages -->
+    <script>
+      if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.crossOrigin = 'anonymous';
+        script.src = './assets/index-GMH_jQQd.js';
+        document.body.appendChild(script);
+      }
+    </script>
+
+    <!-- Development Module for Vite Dev Server -->
+    <script type="module">
+      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        import('/src/main.tsx');
+      }
+    </script>
   </body>
 </html>
