@@ -20,8 +20,8 @@ export const ChildPageBlock: React.FC<ContentBlockProps<ChildPageBlockData>> = (
 
   return (
     <a href={href} className={styles.childPage} onClick={handleClick}>
-      <span aria-hidden="true">{block.icon || '📄'}</span>
       <span>{block.title}</span>
+      <span className={styles.childPageChevron} aria-hidden="true">›</span>
     </a>
   );
 };

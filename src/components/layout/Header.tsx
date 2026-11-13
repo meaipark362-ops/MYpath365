@@ -15,7 +15,6 @@ export interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({
   currentPageId,
   currentPageTitle,
-  currentPageIcon,
   onToggleSidebar,
   className = '',
 }) => {
@@ -32,8 +31,8 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const displayTitle = currentPageTitle
-    ? currentPageTitle.toUpperCase()
-    : 'DASHBOARD · EMBEDDED & AI SYSTEMS';
+    ? currentPageTitle
+    : 'MyPath365 · 장민겸';
 
   return (
     <header className={`${styles.header} ${className}`} role="banner">
@@ -45,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({
           aria-label="사이드바 토글"
           title="사이드바 열기/닫기"
         >
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
             <line x1="3" y1="12" x2="21" y2="12" />
             <line x1="3" y1="6" x2="21" y2="6" />
             <line x1="3" y1="18" x2="21" y2="18" />
@@ -54,8 +53,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         <div className={styles.activeTabPill}>
           <span className={styles.redDot} />
-          <span>{currentPageIcon ? `${currentPageIcon} ` : ''}{displayTitle}</span>
-          <span className={styles.plusTag}>+</span>
+          <span className={styles.tabTitleText}>{displayTitle}</span>
         </div>
       </div>
 
@@ -66,11 +64,11 @@ export const Header: React.FC<HeaderProps> = ({
           onClick={handleOpenSearch}
           title="검색 (Ctrl+K)"
         >
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="11" cy="11" r="8" />
             <line x1="21" y1="21" x2="16.65" y2="16.65" />
           </svg>
-          <span>Search...</span>
+          <span>검색</span>
           <span className={styles.kbdBadge}>⌘K</span>
         </button>
 

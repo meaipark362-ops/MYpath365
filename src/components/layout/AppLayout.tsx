@@ -74,10 +74,6 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const handleOpenSearch = () => {
-    uiStore.getState().openSearchModal();
-  };
-
   const handleCloseSidebar = () => {
     uiStore.getState().setSidebarOpen(false);
   };
@@ -95,7 +91,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
         onClick={handleCloseSidebar}
       />
 
-      {/* Redesigned HERMES Style Sidebar */}
+      {/* Apple-Inspired Collapsible Sidebar */}
       <Sidebar
         navigationTree={navTree}
         isOpen={isSidebarOpen}
@@ -103,11 +99,10 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
       />
 
       <div className={styles.mainContainer}>
-        {/* Top Header */}
+        {/* Top Glass Header */}
         <Header
           currentPageId={currentPage?.id}
           currentPageTitle={currentPage?.title}
-          currentPageIcon={currentPage?.icon}
         />
 
         {/* Reading Progress Indicator */}
@@ -125,34 +120,6 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
               <TableOfContents blocks={currentPage.blocks} />
             </aside>
           )}
-        </div>
-
-        {/* Floating Bottom Command Bar (HERMES AI Signature UI) */}
-        <div className={styles.floatingBarContainer}>
-          <div className={styles.commandPill} onClick={handleOpenSearch}>
-            <div className={styles.commandLeft}>
-              <span>+</span>
-              <div>빠른 활동 검색 또는 섹션 이동... (Ctrl+K)</div>
-            </div>
-            <div className={styles.commandRight}>
-              <span className={styles.tagDropdown}>RTOS / MCU ▾</span>
-              <span className={styles.tagDropdown}>Active ▾</span>
-              <button
-                type="button"
-                className={styles.waveformBtn}
-                title="음성/빠른 실행"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleOpenSearch();
-                }}
-              >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M2 12h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H2v-6zm18 0h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2v-6z" />
-                  <path d="M8 8v8m4-12v16m4-10v4" />
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
 

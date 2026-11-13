@@ -127,7 +127,6 @@ export const ContentPage: React.FC<ContentPageProps> = ({ params }) => {
         <header className={styles.headerSection}>
           <div className={styles.titleRow}>
             <div className={styles.titleArea}>
-              {page.icon && <span className={styles.pageIcon}>{page.icon}</span>}
               <h1 className={styles.pageTitle}>{page.title}</h1>
             </div>
             <FavoriteButton pageId={page.id} showLabel={true} />
@@ -136,7 +135,7 @@ export const ContentPage: React.FC<ContentPageProps> = ({ params }) => {
           <div className={styles.metaRow}>
             {page.metadata?.readingTimeMinutes && (
               <span className={styles.metaItem}>
-                ⏱ 읽는 시간 약 {page.metadata.readingTimeMinutes}분
+                읽는 시간 약 {page.metadata.readingTimeMinutes}분
               </span>
             )}
             {page.metadata?.updatedAt && (
@@ -153,7 +152,7 @@ export const ContentPage: React.FC<ContentPageProps> = ({ params }) => {
         {/* Unconfirmed Migration Warning */}
         {isUnconfirmed && (
           <aside className={styles.unconfirmedAlert} role="note">
-            <span>⚠️</span>
+            <span className={styles.alertBadge}>NOTICE</span>
             <span>
               <strong>알림:</strong> 본 페이지는 Notion 원본 데이터 마이그레이션 예시 구조이며, 실제 원본 파일 투입 시 완전한 내용으로 동기화됩니다.
             </span>
@@ -169,7 +168,6 @@ export const ContentPage: React.FC<ContentPageProps> = ({ params }) => {
         {childPages.length > 0 && (
           <nav className={styles.relatedSection} aria-label="하위 페이지 목록">
             <h2 className={styles.relatedTitle}>
-              <span className={styles.relatedPrefix}>::</span>
               <span>세부 기록 및 하위 문서 ({childPages.length})</span>
             </h2>
             <div className={styles.childPagesGrid}>
@@ -183,7 +181,7 @@ export const ContentPage: React.FC<ContentPageProps> = ({ params }) => {
                     <span className={styles.childIndex}>{String(idx + 1).padStart(2, '0')}</span>
                     <span className={styles.childTitle}>{child.title}</span>
                   </div>
-                  <span className={styles.childArrow} aria-hidden="true">→</span>
+                  <span className={styles.childArrow} aria-hidden="true">›</span>
                 </Link>
               ))}
             </div>

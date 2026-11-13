@@ -78,11 +78,11 @@ export const FavoritesPage: React.FC = () => {
                 style={{ textDecoration: 'none' }}
               >
                 <Card interactive={true} padding="md">
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
-                    <span style={{ fontSize: '20px' }}>{page.icon || '📄'}</span>
-                    <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{page.title}</span>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
+                    <span style={{ fontSize: '1.125rem', fontWeight: 600, color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>{page.title}</span>
+                    <span style={{ fontSize: '1.125rem', color: 'var(--accent-primary)' }} aria-hidden="true">›</span>
                   </div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                  <div style={{ fontSize: '13px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
                     /page/{page.slug}
                   </div>
                 </Card>

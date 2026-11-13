@@ -1,11 +1,13 @@
 .header {
-  height: var(--header-height, 48px);
-  background-color: var(--bg-primary, #090A0D);
+  height: var(--header-height, 52px);
+  background-color: rgba(0, 0, 0, 0.76);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 24px;
   position: sticky;
   top: 0;
   z-index: 30;
@@ -15,109 +17,117 @@
 .leftSection {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  min-width: 0;
 }
 
 .toggleButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: var(--radius-sm, 5px);
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm, 8px);
   background: transparent;
-  color: var(--text-secondary, #9DA1AF);
+  color: var(--text-secondary, #D2D2D7);
   cursor: pointer;
   border: 1px solid transparent;
-  transition: all var(--transition-fast, 120ms);
+  transition: all var(--transition-fast, 180ms);
+  flex-shrink: 0;
 }
 
 .toggleButton:hover {
-  background-color: var(--bg-surface, #161820);
-  color: var(--text-primary, #F4F5F8);
-  border-color: var(--border-subtle, rgba(255, 255, 255, 0.08));
+  background-color: var(--bg-surface, #141417);
+  color: var(--text-primary, #F5F5F7);
 }
 
 .activeTabPill {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background-color: var(--bg-surface, #161820);
-  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
-  border-radius: var(--radius-sm, 5px);
-  padding: 4px 10px;
-  font-size: var(--font-size-xs, 12px);
-  font-family: var(--font-mono, monospace);
-  color: var(--text-primary, #F4F5F8);
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-primary, #F5F5F7);
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
+  min-width: 0;
+}
+
+.tabTitleText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .redDot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--color-red-bright, #FF2E1F);
+  background-color: var(--color-red-bright, #FF2919);
   box-shadow: 0 0 10px var(--color-red, #FF1717);
-}
-
-.plusTag {
-  color: var(--text-muted, #5C6070);
-  font-size: 13px;
-  margin-left: 2px;
+  flex-shrink: 0;
 }
 
 .rightSection {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .iconBtn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: var(--radius-sm, 5px);
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm, 8px);
   background: transparent;
-  color: var(--text-secondary, #9DA1AF);
+  color: var(--text-secondary, #D2D2D7);
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all var(--transition-fast, 120ms);
+  transition: all var(--transition-fast, 180ms);
 }
 
 .iconBtn:hover {
-  background-color: var(--bg-surface, #161820);
-  color: var(--text-primary, #F4F5F8);
-  border-color: var(--border-subtle, rgba(255, 255, 255, 0.08));
+  background-color: var(--bg-surface, #141417);
+  color: var(--text-primary, #F5F5F7);
 }
 
 .searchHintBtn {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 10px;
-  border-radius: var(--radius-sm, 5px);
-  background-color: var(--bg-surface, #161820);
-  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
-  color: var(--text-secondary, #9DA1AF);
-  font-size: var(--font-size-xs, 12px);
+  padding: 6px 12px;
+  border-radius: var(--radius-full, 9999px);
+  background-color: var(--bg-surface, #141417);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
+  color: var(--text-secondary, #D2D2D7);
+  font-size: 14px;
   cursor: pointer;
-  transition: all var(--transition-fast, 120ms);
+  transition: all var(--transition-fast, 180ms);
 }
 
 .searchHintBtn:hover {
-  border-color: var(--color-red-border, rgba(255, 28, 28, 0.55));
-  color: var(--text-primary, #F8F9FA);
+  border-color: var(--color-red-border, rgba(255, 41, 25, 0.5));
+  color: var(--text-primary, #F5F5F7);
+  background-color: var(--bg-elevated, #1D1D21);
 }
 
 .kbdBadge {
-  font-size: 10px;
+  font-size: 11px;
   font-family: var(--font-mono, monospace);
-  padding: 1px 5px;
-  background-color: var(--bg-elevated, #1E212B);
-  border-radius: 3px;
-  color: var(--text-muted, #5C6070);
-  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  padding: 1px 6px;
+  background-color: var(--bg-elevated, #1D1D21);
+  border-radius: 4px;
+  color: var(--text-muted, #98989D);
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 0 14px;
+  }
+
+  .searchHintBtn span:not(.kbdBadge) {
+    display: none;
+  }
 }

@@ -3,8 +3,8 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: var(--bg-primary, #090A0D);
-  color: var(--text-primary, #F4F5F8);
+  background-color: var(--bg-primary, #000000);
+  color: var(--text-primary, #F5F5F7);
 }
 
 .mainContainer {
@@ -15,7 +15,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: var(--bg-primary, #090A0D);
+  background-color: var(--bg-primary, #000000);
 }
 
 .scrollArea {
@@ -26,117 +26,39 @@
   flex-direction: row;
   justify-content: center;
   position: relative;
-  padding-bottom: 70px; /* Space for floating bottom bar */
 }
 
 .contentWrapper {
   flex: 1;
-  max-width: var(--max-content-width, 920px);
+  max-width: var(--max-content-width, 1020px);
   width: 100%;
-  padding: 28px 32px 56px 32px;
+  padding: 48px 48px 96px 48px;
   margin: 0 auto;
 }
 
 .asideToc {
-  width: 220px;
-  min-width: 220px;
-  padding: 28px 16px;
+  width: 240px;
+  min-width: 240px;
+  padding: 48px 20px;
   position: sticky;
   top: 0;
   height: fit-content;
-  max-height: calc(100vh - 48px);
+  max-height: calc(100vh - 52px);
   overflow-y: auto;
-  border-left: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.06));
+  border-left: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
 }
 
 .backdrop {
   display: none;
   position: fixed;
   inset: 0;
-  background-color: var(--bg-overlay, rgba(5, 6, 8, 0.78));
+  background-color: var(--bg-overlay, rgba(0, 0, 0, 0.8));
   z-index: 35;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
-/* Floating Bottom Command Bar (HERMES AI Signature UI) */
-.floatingBarContainer {
-  position: absolute;
-  bottom: 12px;
-  left: 20px;
-  right: 20px;
-  max-width: 960px;
-  margin: 0 auto;
-  z-index: 25;
-  pointer-events: auto;
-}
-
-.commandPill {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 9px 14px;
-  background-color: rgba(14, 15, 19, 0.94);
-  border: 1px solid var(--border-accent, rgba(255, 23, 23, 0.6));
-  border-radius: var(--radius-md, 8px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65), 0 0 16px rgba(255, 23, 23, 0.18);
-  backdrop-filter: blur(12px);
-  transition: all var(--transition-fast, 120ms);
-}
-
-.commandPill:hover {
-  border-color: var(--color-red-bright, #FF2E1F);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.75), 0 0 22px rgba(255, 23, 23, 0.32);
-}
-
-.commandLeft {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--text-secondary, #C8CCD6);
-  font-size: var(--font-size-sm, 14px);
-  cursor: pointer;
-  flex: 1;
-}
-
-.commandLeft span {
-  font-family: var(--font-mono, monospace);
-  color: var(--color-red-bright, #FF2E1F);
-}
-
-.commandRight {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.tagDropdown {
-  font-size: 12px;
-  font-family: var(--font-mono, monospace);
-  color: var(--text-muted, #888E9E);
-  background: transparent;
-  cursor: pointer;
-}
-
-.waveformBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: var(--color-red, #FF1717);
-  color: #FFFFFF;
-  box-shadow: 0 0 12px var(--color-red, #FF1717);
-  cursor: pointer;
-  border: none;
-  transition: transform var(--transition-fast, 120ms);
-}
-
-.waveformBtn:hover {
-  transform: scale(1.08);
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .asideToc {
     display: none;
   }
@@ -148,12 +70,6 @@
   }
 
   .contentWrapper {
-    padding: 16px 16px 36px 16px;
-  }
-
-  .floatingBarContainer {
-    left: 10px;
-    right: 10px;
-    bottom: 8px;
+    padding: 28px 20px 64px 20px;
   }
 }

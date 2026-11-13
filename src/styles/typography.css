@@ -19,20 +19,20 @@
   --font-weight-bold: 700;
 
   /* Type Scale */
-  --text-xs: 0.8125rem;   /* 13px */
-  --text-sm: 0.875rem;    /* 14px */
-  --text-base: 1rem;      /* 16px - Base Body */
-  --text-lg: 1.125rem;    /* 18px - Body Large / Lead */
-  --text-xl: 1.25rem;     /* 20px - Heading 3 */
-  --text-2xl: 1.5rem;     /* 24px - Heading 2 */
-  --text-3xl: 2rem;       /* 32px - Heading 1 */
-  --text-4xl: 2.5rem;     /* 40px - Display / Hero */
+  --text-xs: 0.875rem;    /* 14px */
+  --text-sm: 0.9375rem;   /* 15px */
+  --text-base: 1.0625rem; /* 17px - Apple Standard Body */
+  --text-lg: 1.25rem;     /* 20px - Body Large / Lead */
+  --text-xl: 1.375rem;    /* 22px - Heading 3 */
+  --text-2xl: 1.75rem;    /* 28px - Heading 2 */
+  --text-3xl: 2.25rem;    /* 36px - Heading 1 */
+  --text-4xl: 3rem;       /* 48px - Display / Hero */
 
   /* Line Heights */
-  --line-height-tight: 1.25;    /* Headlines & Displays */
-  --line-height-snug: 1.4;      /* Subheadings, Labels, Buttons */
-  --line-height-normal: 1.6;    /* UI Elements, Inputs */
-  --line-height-body: 1.8;      /* Long-form Editorial Body (Fatigue-free reading) */
+  --line-height-tight: 1.15;    /* Headlines & Displays */
+  --line-height-snug: 1.32;     /* Subheadings, Labels, Buttons */
+  --line-height-normal: 1.55;   /* UI Elements, Inputs */
+  --line-height-body: 1.76;     /* Long-form Editorial Body */
 
   /* Letter Spacings (Tracking) */
   --tracking-tighter: -0.035em;

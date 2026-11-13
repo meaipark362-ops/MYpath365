@@ -1,440 +1,344 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 44px;
+  gap: 80px;
   width: 100%;
   word-break: keep-all;
   overflow-wrap: break-word;
+  animation: pageReveal var(--transition-slow, 420ms cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+@keyframes pageReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ==========================================================================
-   Hero & HERMES AI Console Setup Dialogue
+   1. Apple Hero Section
    ========================================================================== */
-.heroDialogue {
+.heroSection {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
+  align-items: flex-start;
+  padding: 24px 0 16px 0;
 }
 
-.heroEyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-mono, monospace);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--color-red-bright, #FF2E1F);
-}
-
-.eyebrowDot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: var(--color-red, #FF1717);
-  box-shadow: 0 0 10px var(--color-red, #FF1717);
-}
-
-.heroTitle {
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.25;
-  color: var(--text-primary, #F8F9FA);
-}
-
-.heroTitleSub {
-  font-weight: 500;
-  color: var(--text-secondary, #C8CCD6);
-}
-
-.introLine {
-  font-size: 16px;
-  color: var(--text-secondary, #C8CCD6);
-  line-height: 1.75;
-  max-width: 740px;
-}
-
-.introLine strong {
-  color: var(--text-primary, #F8F9FA);
-  font-weight: 600;
-}
-
-/* HERMES Setup Slots & System Responses */
-.dialogueFlow {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 4px;
-}
-
-.dialogueSlot {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-  padding: 11px 16px;
-  background-color: var(--bg-surface, #14161D);
-  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
-  border-radius: var(--radius-sm, 5px);
-  font-size: 14.5px;
-}
-
-.propLabel {
-  font-family: var(--font-mono, monospace);
-  font-size: 13px;
-  color: var(--text-muted, #888E9E);
-  min-width: 125px;
-  flex-shrink: 0;
-}
-
-.propValue {
-  color: var(--text-primary, #F8F9FA);
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.propNeon {
-  color: var(--color-red-bright, #FF2E1F);
-  font-weight: 600;
-  text-shadow: 0 0 12px rgba(255, 23, 23, 0.35);
-}
-
-.systemAck {
-  font-size: 14px;
-  color: var(--text-secondary, #C8CCD6);
-  padding: 2px 4px 6px 4px;
-}
-
-/* Action Quick Links */
-.actionLinksRow {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 6px;
-}
-
-.primaryActionBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
-  border-radius: var(--radius-sm, 5px);
-  background-color: var(--color-red, #FF1717);
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 0 16px rgba(255, 23, 23, 0.42);
-  transition: all var(--transition-fast, 120ms);
-}
-
-.primaryActionBtn:hover {
-  background-color: var(--color-red-bright, #FF2E1F);
-  box-shadow: 0 0 24px rgba(255, 23, 23, 0.65);
-  transform: translateY(-1px);
-}
-
-.secondaryActionBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border-radius: var(--radius-sm, 5px);
-  background-color: var(--bg-surface, #14161D);
-  border: 1px solid var(--border-medium, rgba(255, 255, 255, 0.16));
-  color: var(--text-primary, #F8F9FA);
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all var(--transition-fast, 120ms);
-}
-
-.secondaryActionBtn:hover {
-  border-color: var(--color-red-border, rgba(255, 28, 28, 0.55));
-  background-color: var(--bg-elevated, #1C1F29);
-}
-
-/* ==========================================================================
-   Section Headers
-   ========================================================================== */
-.sectionBlock {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.sectionHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
-}
-
-.sectionTitle {
+.eyebrow {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text-primary, #F8F9FA);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  color: var(--color-red-bright, #FF2919);
+  margin-bottom: 16px;
 }
 
-.sectionPrefix {
-  font-family: var(--font-mono, monospace);
-  color: var(--color-red-bright, #FF2E1F);
-}
-
-.sectionMeta {
-  font-family: var(--font-mono, monospace);
-  font-size: 12px;
-  color: var(--text-muted, #888E9E);
-}
-
-/* ==========================================================================
-   Featured Hardware & Embedded Projects (Wide Spec Strips)
-   ========================================================================== */
-.specList {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.specStrip {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 22px 24px;
-  background-color: var(--bg-secondary, #0E0F13);
-  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
-  border-left: 3px solid var(--color-red, #FF1717);
-  border-radius: var(--radius-md, 8px);
-  text-decoration: none;
-  transition: all var(--transition-fast, 120ms);
-}
-
-.specStrip:hover {
-  background-color: var(--bg-surface, #14161D);
-  border-color: var(--color-red-border, rgba(255, 28, 28, 0.55));
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45), 0 0 18px rgba(255, 23, 23, 0.14);
-}
-
-.specTopRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.specIdentity {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.specCode {
-  font-family: var(--font-mono, monospace);
-  font-size: 12px;
+.heroTitle {
+  font-size: clamp(2.5rem, 4.5vw, 3.5rem);
   font-weight: 700;
-  color: var(--color-red-bright, #FF2E1F);
-  padding: 3px 8px;
-  background-color: rgba(255, 23, 23, 0.12);
-  border: 1px solid rgba(255, 28, 28, 0.45);
-  border-radius: 4px;
-  flex-shrink: 0;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--text-primary, #F5F5F7);
+  margin-bottom: 24px;
 }
 
-.specTitle {
-  font-size: 18px;
+.heroSubtitle {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
   font-weight: 700;
-  color: var(--text-primary, #F8F9FA);
-  line-height: 1.35;
+  color: var(--text-secondary, #D2D2D7);
+  line-height: 1.24;
+  letter-spacing: -0.022em;
 }
 
-.statusCompleted {
-  font-family: var(--font-mono, monospace);
-  font-size: 12px;
-  font-weight: 600;
-  color: #34D399;
-  background-color: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  padding: 3px 10px;
-  border-radius: 4px;
-}
-
-.statusLive {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-mono, monospace);
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--color-red-bright, #FF2E1F);
-  background-color: rgba(255, 23, 23, 0.14);
-  border: 1px solid rgba(255, 28, 28, 0.5);
-  padding: 3px 10px;
-  border-radius: 4px;
-}
-
-.liveDot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--color-red-bright, #FF2E1F);
-  box-shadow: 0 0 8px var(--color-red, #FF1717);
-}
-
-.specDesc {
-  font-size: 15px;
-  color: var(--text-secondary, #C8CCD6);
-  line-height: 1.75;
-}
-
-.specFooter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 4px;
-}
-
-.specTags {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.specTag {
-  font-family: var(--font-mono, monospace);
-  font-size: 12px;
-  color: var(--text-secondary, #C8CCD6);
-  background-color: var(--bg-elevated, #1C1F29);
-  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
-  padding: 3px 9px;
-  border-radius: 4px;
-}
-
-.specArrow {
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--color-red-bright, #FF2E1F);
-}
-
-/* ==========================================================================
-   Core Knowledge & Activity Index (Editorial Index Rows)
-   ========================================================================== */
-.indexTable {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
-}
-
-.indexRow {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 24px;
-  padding: 20px 12px;
-  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
-  transition: background-color var(--transition-fast, 120ms);
-}
-
-.indexRow:hover {
-  background-color: rgba(255, 255, 255, 0.02);
-}
-
-.indexLeft {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-}
-
-.indexCode {
-  font-family: var(--font-mono, monospace);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--color-red-bright, #FF2E1F);
-  min-width: 24px;
-}
-
-.indexTitleLink {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text-primary, #F8F9FA);
-  text-decoration: none;
-  transition: color var(--transition-fast, 120ms);
-}
-
-.indexTitleLink:hover {
-  color: var(--color-red-bright, #FF2E1F);
-}
-
-.indexRight {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.indexSummary {
-  font-size: 15px;
-  color: var(--text-secondary, #C8CCD6);
+.heroLead {
+  font-size: 19px;
   line-height: 1.68;
+  color: var(--text-secondary, #D2D2D7);
+  max-width: 680px;
+  margin-bottom: 32px;
 }
 
-.subLinkRow {
+.heroActions {
   display: flex;
+  align-items: center;
+  gap: 24px;
   flex-wrap: wrap;
-  gap: 8px;
 }
 
-.subLinkChip {
+.pillButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 980px;
+  background-color: var(--color-red, #FF1717);
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  box-shadow: 0 0 22px rgba(255, 23, 23, 0.38);
+  transition: background-color var(--transition-fast, 180ms),
+              box-shadow var(--transition-fast, 180ms),
+              transform var(--transition-fast, 180ms);
+}
+
+.pillButton:hover {
+  background-color: var(--color-red-bright, #FF2919);
+  box-shadow: 0 0 28px rgba(255, 41, 25, 0.58);
+  transform: translateY(-1px);
+}
+
+.textLinkAction {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 11px;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 500;
-  color: var(--text-primary, #F8F9FA);
-  background-color: var(--bg-surface, #14161D);
-  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
-  border-radius: var(--radius-sm, 5px);
-  text-decoration: none;
-  transition: all var(--transition-fast, 120ms);
+  color: var(--color-red-bright, #FF2919);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 0;
+  transition: opacity var(--transition-fast, 180ms);
 }
 
-.subLinkChip:hover {
-  border-color: var(--color-red-border, rgba(255, 28, 28, 0.6));
-  background-color: rgba(255, 23, 23, 0.12);
-  color: #FFFFFF;
+.textLinkAction:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-.chipArrow {
+.chevron {
+  display: inline-block;
+  font-size: 1.15em;
+  line-height: 1;
+  transition: transform var(--transition-fast, 180ms);
+}
+
+.textLinkAction:hover .chevron,
+.showcaseCard:hover .chevron,
+.domainTile:hover .chevron {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   2. Core Engineering Pillars (3-Column Highlights)
+   ========================================================================== */
+.pillarsSection {
+  padding: 40px 0;
+  border-top: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
+  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.pillarItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pillarLabel {
   font-family: var(--font-mono, monospace);
-  font-size: 12px;
-  color: var(--color-red-bright, #FF2E1F);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-red-bright, #FF2919);
+  letter-spacing: 0.03em;
 }
 
-@media (max-width: 768px) {
-  .dialogueSlot {
-    flex-direction: column;
-    gap: 4px;
-  }
+.pillarTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary, #F5F5F7);
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
 
-  .indexRow {
+.pillarDesc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-muted, #98989D);
+}
+
+/* ==========================================================================
+   3. Section Headers
+   ========================================================================== */
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionTitle {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--text-primary, #F5F5F7);
+}
+
+.sectionSubtitle {
+  font-size: 17px;
+  color: var(--text-muted, #98989D);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   4. Featured Hardware Projects (Spacious Showcase Cards)
+   ========================================================================== */
+.showcaseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.showcaseCard {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  background-color: var(--bg-surface, #141417);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 18px);
+  text-decoration: none;
+  transition: background-color var(--transition-normal, 280ms),
+              border-color var(--transition-normal, 280ms),
+              transform var(--transition-normal, 280ms);
+}
+
+.showcaseCard:hover {
+  background-color: var(--bg-elevated, #1D1D21);
+  border-color: rgba(255, 41, 25, 0.45);
+  transform: translateY(-2px);
+}
+
+.cardEyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-red-bright, #FF2919);
+  margin-bottom: 12px;
+}
+
+.showcaseTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: -0.018em;
+  color: var(--text-primary, #F5F5F7);
+  margin-bottom: 14px;
+}
+
+.showcaseDesc {
+  font-size: 17px;
+  line-height: 1.72;
+  color: var(--text-secondary, #D2D2D7);
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.cardActionLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-red-bright, #FF2919);
+}
+
+/* ==========================================================================
+   5. Explore by Domain (Spacious 2-Column Tiles)
+   ========================================================================== */
+.domainGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.domainTile {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 32px;
+  background-color: var(--bg-secondary, #0C0C0E);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 18px);
+  text-decoration: none;
+  transition: background-color var(--transition-normal, 280ms),
+              border-color var(--transition-normal, 280ms),
+              transform var(--transition-normal, 280ms);
+}
+
+.domainTile:hover {
+  background-color: var(--bg-surface, #141417);
+  border-color: rgba(255, 41, 25, 0.4);
+  transform: translateY(-2px);
+}
+
+.domainIndex {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-red-bright, #FF2919);
+  margin-bottom: 10px;
+}
+
+.domainTitle {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  color: var(--text-primary, #F5F5F7);
+  margin-bottom: 10px;
+}
+
+.domainDesc {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-muted, #98989D);
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pillarsGrid {
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 18px 4px;
+    gap: 24px;
   }
 
-  .specStrip {
-    padding: 18px 16px;
+  .showcaseGrid,
+  .domainGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    gap: 56px;
+  }
+
+  .showcaseCard {
+    padding: 24px;
+  }
+
+  .domainTile {
+    padding: 24px;
   }
 }

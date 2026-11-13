@@ -10,7 +10,6 @@ export const CalloutBlock: React.FC<ContentBlockProps<CalloutBlockData>> = ({
 }) => {
   return (
     <div className={styles.callout}>
-      {block.icon && <div className={styles.calloutIcon}>{block.icon}</div>}
       <div className={styles.calloutBody}>
         <RichText richText={block.richText} />
         {block.children && block.children.length > 0 && renderChildBlocks && (
