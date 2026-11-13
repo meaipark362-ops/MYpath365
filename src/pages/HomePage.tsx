@@ -83,6 +83,17 @@ export const HomePage: React.FC = () => {
               <span className={styles.chevron} aria-hidden="true">›</span>
             </button>
           </div>
+
+          {/* Under Construction Notice Banner */}
+          <div className={styles.noticeBanner}>
+            <div className={styles.noticeText}>
+              현재 수정중인 페이지입니다 기록에는 허구가 많습니다. 추후 수정할 예정입니다
+            </div>
+            <Link to="/page/career-classes" className={styles.teacherLinkButton}>
+              <span>저희 학교 선생님이시면 이걸 찾으시는거겠죠?</span>
+              <span className={styles.teacherChevron} aria-hidden="true">›</span>
+            </Link>
+          </div>
         </section>
 
         {/* 2. Core Engineering Pillars (3-Column Highlights) */}
