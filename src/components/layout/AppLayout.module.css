@@ -74,33 +74,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 14px;
-  background-color: rgba(16, 17, 22, 0.94);
-  border: 1px solid var(--border-accent, rgba(224, 36, 68, 0.55));
+  padding: 9px 14px;
+  background-color: rgba(14, 15, 19, 0.94);
+  border: 1px solid var(--border-accent, rgba(255, 23, 23, 0.6));
   border-radius: var(--radius-md, 8px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65), 0 0 16px rgba(224, 36, 68, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65), 0 0 16px rgba(255, 23, 23, 0.18);
   backdrop-filter: blur(12px);
   transition: all var(--transition-fast, 120ms);
 }
 
 .commandPill:hover {
-  border-color: var(--color-red-bright, #FF2E56);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.75), 0 0 20px rgba(224, 36, 68, 0.25);
+  border-color: var(--color-red-bright, #FF2E1F);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.75), 0 0 22px rgba(255, 23, 23, 0.32);
 }
 
 .commandLeft {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--text-secondary, #9DA1AF);
-  font-size: var(--font-size-sm, 13px);
+  color: var(--text-secondary, #C8CCD6);
+  font-size: var(--font-size-sm, 14px);
   cursor: pointer;
   flex: 1;
 }
 
 .commandLeft span {
   font-family: var(--font-mono, monospace);
-  color: var(--color-red-bright, #FF2E56);
+  color: var(--color-red-bright, #FF2E1F);
 }
 
 .commandRight {
@@ -110,9 +110,9 @@
 }
 
 .tagDropdown {
-  font-size: 11px;
+  font-size: 12px;
   font-family: var(--font-mono, monospace);
-  color: var(--text-muted, #5C6070);
+  color: var(--text-muted, #888E9E);
   background: transparent;
   cursor: pointer;
 }
@@ -121,12 +121,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background-color: var(--color-red-bright, #FF2E56);
+  background-color: var(--color-red, #FF1717);
   color: #FFFFFF;
-  box-shadow: 0 0 10px var(--color-red, #E02444);
+  box-shadow: 0 0 12px var(--color-red, #FF1717);
   cursor: pointer;
   border: none;
   transition: transform var(--transition-fast, 120ms);

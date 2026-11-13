@@ -4,9 +4,9 @@
   justify-content: center;
   gap: 6px;
   background: transparent;
-  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.1));
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.1));
   border-radius: var(--radius-md, 8px);
-  color: var(--text-secondary, #747b85);
+  color: var(--text-secondary, #C8CCD6);
   cursor: pointer;
   padding: 6px 10px;
   font-size: var(--text-sm, 14px);
@@ -16,9 +16,9 @@
 }
 
 .button:hover {
-  background: var(--bg-surface, #fbfbfa);
-  color: var(--text-primary, #101114);
-  border-color: var(--border-strong, rgba(16, 17, 20, 0.2));
+  background: var(--bg-surface, #14161D);
+  color: var(--text-primary, #F8F9FA);
+  border-color: var(--color-red-border, rgba(255, 28, 28, 0.55));
 }
 
 .active {

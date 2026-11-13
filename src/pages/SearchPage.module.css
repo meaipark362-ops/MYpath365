@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-6, 24px);
-  animation: fadeIn var(--transition-normal, 250ms ease);
+  animation: fadeIn var(--transition-normal, 200ms ease);
+  word-break: keep-all;
 }
 
 @keyframes fadeIn {
@@ -23,7 +24,7 @@
 .pageTitle {
   font-size: var(--text-2xl, 1.5rem);
   font-weight: var(--font-bold, 700);
-  color: var(--text-primary, #101114);
+  color: var(--text-primary, #F8F9FA);
 }
 
 .searchBarWrapper {
@@ -40,16 +41,17 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-1, 4px);
-  padding: var(--space-4, 16px);
-  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  gap: var(--space-2, 8px);
+  padding: var(--space-4, 16px) var(--space-5, 20px);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
   border-radius: var(--radius-md, 8px);
-  background-color: var(--bg-surface, #FBFBFA);
-  transition: all var(--transition-fast, 150ms ease);
+  background-color: var(--bg-surface, #14161D);
+  transition: all var(--transition-fast, 120ms ease);
 }
 
 .resultItem:hover {
-  border-color: var(--border-strong, rgba(16, 17, 20, 0.24));
+  border-color: var(--color-red-border, rgba(255, 28, 28, 0.55));
+  background-color: var(--bg-elevated, #1C1F29);
   transform: translateY(-1px);
 }
 
@@ -57,24 +59,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .resultTitle {
   font-size: var(--text-base, 1rem);
   font-weight: var(--font-semibold, 600);
-  color: var(--text-primary, #101114);
+  color: var(--text-primary, #F8F9FA);
 }
 
 .resultSlug {
-  font-size: var(--text-xs, 12px);
-  color: var(--text-muted, #8E9299);
+  font-size: var(--text-xs, 13px);
+  color: var(--color-red-bright, #FF2E1F);
   font-family: var(--font-mono, monospace);
 }
 
 .resultSnippet {
   font-size: var(--text-sm, 14px);
-  color: var(--text-secondary, #575D66);
-  line-height: var(--line-height-body, 1.7);
+  color: var(--text-secondary, #C8CCD6);
+  line-height: var(--line-height-body, 1.8);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

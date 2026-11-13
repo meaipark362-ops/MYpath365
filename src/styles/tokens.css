@@ -1,83 +1,83 @@
 /**
- * MyPath365 Design Tokens — HERMES AI Inspired Theme
+ * MyPath365 Design Tokens — HERMES AI Inspired Theme (Pure Neon Red Edition)
  * 
  * Palette:
- * - Pure Black: #090A0D (Deep obsidian canvas)
- * - Dark Charcoal: #101116 (Subtle pane background)
- * - Surface Charcoal: #161820 (Elevated card/panel/input)
- * - Elevated Slate: #1E212B (Hover states, borders)
- * - Electric Red / Crimson: #E02444 (HERMES signature accent, glow, badges)
- * - Radiant Red: #FF2E56 (Bright active indicators, cursor focus)
- * - Crisp White: #F4F5F8 (Primary high-contrast editorial text)
- * - Slate Neutral: #8E929E (Secondary metadata & labels)
- * - Muted Neutral: #525663 (Subtle borders, inactive hints)
+ * - Pure Black: #08080A (Deep obsidian canvas)
+ * - Dark Charcoal: #0E0F13 (Subtle pane background)
+ * - Surface Charcoal: #14161D (Elevated card/panel/input)
+ * - Elevated Slate: #1C1F29 (Hover states, borders)
+ * - Neon Red: #FF1717 (Pure RGB red with minimal blue channel)
+ * - Bright Neon Red: #FF2E1F (High-luminance neon active indicator)
+ * - Crisp White: #F8F9FA (Primary high-contrast editorial text)
+ * - Secondary Neutral: #C8CCD6 (High-readability body & metadata text)
+ * - Muted Neutral: #888E9E (WCAG AA compliant labels & captions)
  */
 
 :root {
   /* ==========================================================================
-     1. Primitive Color Palette (Black + Charcoal + Electric Red)
+     1. Primitive Color Palette (Black + Charcoal + Pure Neon Red)
      ========================================================================== */
-  --color-obsidian: #090A0D;
+  --color-obsidian: #08080A;
   --color-ivory: #F6F6F3;
-  --color-silver: #A7A9AD;
-  --color-slate: #747B85;
-  --color-charcoal-deep: #101116;
-  --color-charcoal-surface: #161820;
-  --color-charcoal-elevated: #1E212B;
-  --color-charcoal-highlight: #282C3A;
+  --color-silver: #C8CCD6;
+  --color-slate: #888E9E;
+  --color-charcoal-deep: #0E0F13;
+  --color-charcoal-surface: #14161D;
+  --color-charcoal-elevated: #1C1F29;
+  --color-charcoal-highlight: #252936;
 
-  --color-red: #E02444;
-  --color-red-bright: #FF2E56;
-  --color-red-glow: rgba(224, 36, 68, 0.28);
-  --color-red-subtle: rgba(224, 36, 68, 0.12);
-  --color-red-border: rgba(224, 36, 68, 0.45);
+  --color-red: #FF1717;
+  --color-red-bright: #FF2E1F;
+  --color-red-glow: rgba(255, 23, 23, 0.42);
+  --color-red-subtle: rgba(255, 23, 23, 0.12);
+  --color-red-border: rgba(255, 28, 28, 0.55);
 
   --color-white: #FFFFFF;
-  --color-text-main: #F4F5F8;
-  --color-text-sub: #9DA1AF;
-  --color-text-muted: #5C6070;
+  --color-text-main: #F8F9FA;
+  --color-text-sub: #C8CCD6;
+  --color-text-muted: #888E9E;
 
   /* Functional Status Primitives */
   --color-success: #10B981;
   --color-success-subtle: rgba(16, 185, 129, 0.14);
   --color-warning: #F59E0B;
   --color-warning-subtle: rgba(245, 158, 11, 0.14);
-  --color-danger: #E02444;
-  --color-danger-subtle: rgba(224, 36, 68, 0.14);
+  --color-danger: #FF1717;
+  --color-danger-subtle: rgba(255, 23, 23, 0.14);
   --color-info: #3B82F6;
   --color-info-subtle: rgba(59, 130, 246, 0.14);
 
   /* ==========================================================================
      2. Semantic Colors (HERMES Dark Mode Default)
      ========================================================================== */
-  --bg-primary: #090A0D;
-  --bg-secondary: #101116;
-  --bg-surface: #161820;
-  --bg-elevated: #1E212B;
-  --bg-glass: rgba(16, 17, 22, 0.88);
-  --bg-overlay: rgba(5, 6, 8, 0.78);
+  --bg-primary: #08080A;
+  --bg-secondary: #0E0F13;
+  --bg-surface: #14161D;
+  --bg-elevated: #1C1F29;
+  --bg-glass: rgba(14, 15, 19, 0.90);
+  --bg-overlay: rgba(5, 6, 8, 0.82);
 
-  --text-primary: #F4F5F8;
-  --text-secondary: #9DA1AF;
-  --text-muted: #5C6070;
+  --text-primary: #F8F9FA;
+  --text-secondary: #C8CCD6;
+  --text-muted: #888E9E;
   --text-contrast: #FFFFFF;
-  --text-accent: #FF2E56;
+  --text-accent: #FF2424;
 
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-medium: rgba(255, 255, 255, 0.14);
-  --border-strong: rgba(255, 255, 255, 0.24);
-  --border-accent: rgba(224, 36, 68, 0.55);
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-strong: rgba(255, 255, 255, 0.26);
+  --border-accent: rgba(255, 23, 23, 0.6);
 
-  --accent-primary: #E02444;
+  --accent-primary: #FF1717;
   --accent-contrast: #FFFFFF;
-  --accent-hover: #FF2E56;
-  --accent-glow: 0 0 16px rgba(224, 36, 68, 0.35);
+  --accent-hover: #FF2E1F;
+  --accent-glow: 0 0 18px rgba(255, 23, 23, 0.45);
 
-  --interactive-hover: rgba(255, 255, 255, 0.04);
-  --interactive-active: rgba(224, 36, 68, 0.12);
+  --interactive-hover: rgba(255, 255, 255, 0.05);
+  --interactive-active: rgba(255, 23, 23, 0.14);
 
-  --focus-ring: rgba(224, 36, 68, 0.75);
-  --focus-ring-offset: #090A0D;
+  --focus-ring: rgba(255, 23, 23, 0.85);
+  --focus-ring-offset: #08080A;
 
   --status-success-text: #34D399;
   --status-success-bg: rgba(16, 185, 129, 0.12);
@@ -87,9 +87,9 @@
   --status-warning-bg: rgba(245, 158, 11, 0.12);
   --status-warning-border: rgba(245, 158, 11, 0.3);
 
-  --status-danger-text: #FF4D6D;
-  --status-danger-bg: rgba(224, 36, 68, 0.12);
-  --status-danger-border: rgba(224, 36, 68, 0.3);
+  --status-danger-text: #FF3333;
+  --status-danger-bg: rgba(255, 23, 23, 0.14);
+  --status-danger-border: rgba(255, 23, 23, 0.35);
 
   /* ==========================================================================
      3. Typography & Editorial Scale (Apple SF Pro & Apple SD Gothic Neo)
@@ -98,16 +98,21 @@
   --font-mono: 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --font-serif: 'New York', -apple-system-ui-serif, 'Apple Garamond', Georgia, serif;
 
-  --font-size-2xs: 0.6875rem; /* 11px */
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.8125rem;  /* 13px */
-  --font-size-base: 0.875rem;  /* 14px */
-  --font-size-md: 0.9375rem;  /* 15px */
-  --font-size-lg: 1.0625rem;  /* 17px */
+  --font-size-2xs: 0.75rem;   /* 12px */
+  --font-size-xs: 0.8125rem;  /* 13px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 0.9375rem;/* 15px */
+  --font-size-md: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
   --font-size-xl: 1.25rem;    /* 20px */
   --font-size-2xl: 1.5rem;    /* 24px */
   --font-size-3xl: 1.875rem;  /* 30px */
   --font-size-4xl: 2.25rem;   /* 36px */
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
 
   --font-weight-normal: 400;
   --font-weight-medium: 500;
@@ -116,16 +121,37 @@
 
   --line-height-tight: 1.25;
   --line-height-snug: 1.4;
-  --line-height-normal: 1.55;
-  --line-height-relaxed: 1.7;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  --line-height-body: 1.8;
 
-  --letter-spacing-tight: -0.025em;
+  --letter-spacing-tight: -0.02em;
   --letter-spacing-normal: 0;
   --letter-spacing-wide: 0.04em;
   --letter-spacing-wider: 0.08em;
 
   /* ==========================================================================
-     4. Geometry, Shadows & Elevation
+     4. Spacing Scale & Layout Dimensions
+     ========================================================================== */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+
+  --reading-max-width: 780px;
+  --max-content-width: 980px;
+  --content-max-width: 980px;
+  --sidebar-width: 280px;
+  --header-height: 50px;
+  --bottom-bar-height: 54px;
+
+  /* ==========================================================================
+     5. Geometry, Shadows & Motion
      ========================================================================== */
   --radius-xs: 3px;
   --radius-sm: 5px;
@@ -134,20 +160,20 @@
   --radius-xl: 18px;
   --radius-full: 9999px;
 
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.45);
+  --shadow-elevation: 0 8px 24px rgba(0, 0, 0, 0.65);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.55);
   --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.7);
-  --shadow-glow-red: 0 0 20px rgba(224, 36, 68, 0.22);
-  --shadow-outline-red: 0 0 0 1px rgba(224, 36, 68, 0.65);
+  --shadow-glow-red: 0 0 20px rgba(255, 23, 23, 0.28);
+  --shadow-outline-red: 0 0 0 1px rgba(255, 23, 23, 0.7);
+
+  --motion-duration-fast: 120ms;
+  --motion-duration-normal: 200ms;
+  --motion-ease-subtle: cubic-bezier(0.16, 1, 0.3, 1);
 
   --transition-fast: 120ms cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 200ms cubic-bezier(0.16, 1, 0.3, 1);
   --transition-slow: 320ms cubic-bezier(0.16, 1, 0.3, 1);
-
-  --max-content-width: 960px;
-  --content-max-width: 960px;
-  --line-height-body: 1.7;
-  --sidebar-width: 270px;
-  --header-height: 48px;
-  --bottom-bar-height: 54px;
 }

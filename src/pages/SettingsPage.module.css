@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-6, 24px);
-  animation: fadeIn var(--transition-normal, 250ms ease);
+  animation: fadeIn var(--transition-normal, 200ms ease);
+  word-break: keep-all;
 }
 
 @keyframes fadeIn {
@@ -23,18 +24,18 @@
 .pageTitle {
   font-size: var(--text-2xl, 1.5rem);
   font-weight: var(--font-bold, 700);
-  color: var(--text-primary, #101114);
+  color: var(--text-primary, #F8F9FA);
 }
 
 .pageDesc {
   font-size: var(--text-sm, 14px);
-  color: var(--text-secondary, #575D66);
+  color: var(--text-secondary, #C8CCD6);
 }
 
 .section {
-  background-color: var(--bg-surface, #FBFBFA);
-  border: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
-  border-radius: var(--radius-lg, 16px);
+  background-color: var(--bg-surface, #14161D);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
+  border-radius: var(--radius-lg, 12px);
   padding: var(--space-6, 24px);
   display: flex;
   flex-direction: column;
@@ -44,15 +45,15 @@
 .sectionTitle {
   font-size: var(--text-base, 1rem);
   font-weight: var(--font-semibold, 600);
-  color: var(--text-primary, #101114);
+  color: var(--text-primary, #F8F9FA);
 }
 
 .settingRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-2, 8px) 0;
-  border-bottom: 1px solid var(--border-subtle, rgba(16, 17, 20, 0.08));
+  padding: var(--space-3, 12px) 0;
+  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.09));
 }
 
 .settingRow:last-child {
@@ -62,18 +63,18 @@
 .settingInfo {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .settingLabel {
   font-size: var(--text-sm, 14px);
   font-weight: var(--font-medium, 500);
-  color: var(--text-primary, #101114);
+  color: var(--text-primary, #F8F9FA);
 }
 
 .settingDesc {
-  font-size: var(--text-xs, 12px);
-  color: var(--text-muted, #8E9299);
+  font-size: var(--text-xs, 13px);
+  color: var(--text-muted, #888E9E);
 }
 
 .buttonGroup {

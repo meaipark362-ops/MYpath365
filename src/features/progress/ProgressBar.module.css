@@ -11,13 +11,14 @@
 
 .fill {
   height: 100%;
-  background: var(--text-primary, #101114);
+  background: var(--color-red, #FF1717);
+  box-shadow: 0 0 10px rgba(255, 23, 23, 0.65);
   transition: width 0.1s ease-out;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
 .subtle {
-  background: var(--text-secondary, #747b85);
-  opacity: 0.6;
+  background: var(--color-red-bright, #FF2E1F);
+  opacity: 0.75;
 }

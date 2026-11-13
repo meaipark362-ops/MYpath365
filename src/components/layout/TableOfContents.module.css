@@ -1,15 +1,16 @@
 .toc {
-  font-size: var(--text-xs, 12px);
-  color: var(--text-secondary, #575D66);
+  font-size: 13px;
+  color: var(--text-secondary, #C8CCD6);
   padding: var(--space-4, 16px) var(--space-2, 8px);
 }
 
 .title {
-  font-size: var(--text-xs, 12px);
-  font-weight: var(--font-semibold, 600);
+  font-size: 11px;
+  font-family: var(--font-mono, monospace);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted, #8E9299);
+  letter-spacing: 0.08em;
+  color: var(--color-red-bright, #FF2E1F);
   margin-bottom: var(--space-3, 12px);
 }
 
@@ -23,7 +24,7 @@
 }
 
 .item {
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .depth1 {
@@ -37,24 +38,24 @@
 
 .depth3 {
   padding-left: var(--space-6, 24px);
-  color: var(--text-muted, #8E9299);
+  color: var(--text-muted, #888E9E);
 }
 
 .link {
-  color: var(--text-secondary, #575D66);
+  color: var(--text-secondary, #C8CCD6);
   text-decoration: none;
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: color var(--transition-fast, 150ms ease);
+  transition: color var(--transition-fast, 120ms ease);
 }
 
 .link:hover {
-  color: var(--text-primary, #101114);
+  color: var(--color-red-bright, #FF2E1F);
 }
 
 .empty {
-  color: var(--text-muted, #8E9299);
+  color: var(--text-muted, #888E9E);
   font-style: italic;
 }

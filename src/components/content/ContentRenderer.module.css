@@ -1,16 +1,16 @@
 .contentContainer {
   width: 100%;
-  max-width: var(--reading-max-width, 720px);
+  max-width: var(--reading-max-width, 780px);
   margin: 0 auto;
-  padding: var(--space-4, 16px) 0;
+  padding: var(--space-3, 12px) 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-1, 4px);
+  gap: var(--space-2, 8px);
 }
 
 .emptyState {
   padding: var(--space-8, 32px) 0;
   text-align: center;
-  color: var(--text-muted, #8E9299);
+  color: var(--text-muted, #888E9E);
   font-size: var(--text-sm, 0.875rem);
 }

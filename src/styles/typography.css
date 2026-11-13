@@ -19,7 +19,7 @@
   --font-weight-bold: 700;
 
   /* Type Scale */
-  --text-xs: 0.75rem;     /* 12px */
+  --text-xs: 0.8125rem;   /* 13px */
   --text-sm: 0.875rem;    /* 14px */
   --text-base: 1rem;      /* 16px - Base Body */
   --text-lg: 1.125rem;    /* 18px - Body Large / Lead */
@@ -29,10 +29,10 @@
   --text-4xl: 2.5rem;     /* 40px - Display / Hero */
 
   /* Line Heights */
-  --line-height-tight: 1.2;     /* Headlines & Displays */
-  --line-height-snug: 1.35;    /* Subheadings, Labels, Buttons */
-  --line-height-normal: 1.5;   /* UI Elements, Inputs */
-  --line-height-body: 1.72;    /* Long-form Editorial Body (Fatigue-free reading) */
+  --line-height-tight: 1.25;    /* Headlines & Displays */
+  --line-height-snug: 1.4;      /* Subheadings, Labels, Buttons */
+  --line-height-normal: 1.6;    /* UI Elements, Inputs */
+  --line-height-body: 1.8;      /* Long-form Editorial Body (Fatigue-free reading) */
 
   /* Letter Spacings (Tracking) */
   --tracking-tighter: -0.035em;

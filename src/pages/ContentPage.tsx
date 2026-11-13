@@ -168,16 +168,22 @@ export const ContentPage: React.FC<ContentPageProps> = ({ params }) => {
         {/* Child Pages Navigation */}
         {childPages.length > 0 && (
           <nav className={styles.relatedSection} aria-label="하위 페이지 목록">
-            <h2 className={styles.relatedTitle}>하위 페이지</h2>
+            <h2 className={styles.relatedTitle}>
+              <span className={styles.relatedPrefix}>::</span>
+              <span>세부 기록 및 하위 문서 ({childPages.length})</span>
+            </h2>
             <div className={styles.childPagesGrid}>
-              {childPages.map((child) => (
+              {childPages.map((child, idx) => (
                 <Link
                   key={child.id}
                   to={`/page/${child.slug}`}
                   className={styles.childCard}
                 >
-                  <span>{child.icon || '📄'}</span>
-                  <span>{child.title}</span>
+                  <div className={styles.childCardLeft}>
+                    <span className={styles.childIndex}>{String(idx + 1).padStart(2, '0')}</span>
+                    <span className={styles.childTitle}>{child.title}</span>
+                  </div>
+                  <span className={styles.childArrow} aria-hidden="true">→</span>
                 </Link>
               ))}
             </div>
