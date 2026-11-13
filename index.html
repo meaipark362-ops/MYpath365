@@ -7,10 +7,24 @@
     <title>MyPath365 [장민겸] — Embedded & AI Systems Portfolio</title>
     <meta name="description" content="Personal branding and career engineering portfolio for Embedded Software & AI Robotics." />
     <!-- Fonts -->
-    <script type="module" crossorigin src="./assets/index-Bg6_r3dA.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-C_B_ei17.css">
+    <!-- Production Bundle Styles -->
+    <script type="module" crossorigin src="./assets/index-DHXZr7bc.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CQdCr3ec.css">
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Production Bundle Execution for GitHub Pages -->
+    <script>
+      if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.crossOrigin = 'anonymous';
+        script.src = './assets/index-Bg6_r3dA.js';
+        document.body.appendChild(script);
+      }
+    </script>
+
+    <!-- Development Module for Vite Dev Server -->
   </body>
 </html>
