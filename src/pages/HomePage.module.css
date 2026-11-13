@@ -399,3 +399,201 @@
     padding: 24px;
   }
 }
+
+/* ==========================================================================
+   5. Glassmorphism Welcome Modal with Rainbow Gradient Text
+   ========================================================================== */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: overlayFadeIn 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.glassCard {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  padding: 48px 40px;
+  border-radius: 28px;
+  background: rgba(22, 22, 26, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.65),
+              0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+              0 0 48px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  text-align: center;
+  animation: modalScaleUp 340ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary, #D2D2D7);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 2;
+}
+
+.modalCloseButton:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+  transform: rotate(90deg);
+}
+
+.modalGlowBackground {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 100, 150, 0.22) 0%, rgba(120, 100, 255, 0.18) 40%, rgba(0, 210, 255, 0.12) 70%, transparent 100%);
+  filter: blur(48px);
+  pointer-events: none;
+}
+
+.modalContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Translucent Apple-Style Rainbow Gradient Heading */
+.rainbowHeading {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Apple SD Gothic Neo', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.16;
+  background: linear-gradient(
+    135deg,
+    #FF5E7E 0%,
+    #FFA857 20%,
+    #FFD54F 38%,
+    #4ADE80 55%,
+    #38BDF8 75%,
+    #A78BFA 90%,
+    #F472B6 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: rainbowShift 6s ease infinite alternate;
+  filter: drop-shadow(0 4px 18px rgba(255, 120, 180, 0.25));
+  word-break: keep-all;
+}
+
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.modalDescription {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text-secondary, #D2D2D7);
+  max-width: 440px;
+  word-break: keep-all;
+}
+
+.downloadSection {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 980px;
+  background: linear-gradient(135deg, #FF2919 0%, #FF5A36 100%);
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(255, 41, 25, 0.45);
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(255, 41, 25, 0.65);
+  filter: brightness(1.08);
+}
+
+.downloadIcon {
+  flex-shrink: 0;
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.downloadButton:hover .downloadIcon {
+  transform: translateY(2px);
+}
+
+.downloadMeta {
+  font-size: 13px;
+  font-family: var(--font-mono, monospace);
+  color: var(--text-muted, #98989D);
+}

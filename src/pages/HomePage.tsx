@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AppLayout } from '../components/layout/AppLayout';
-import { Link } from '../app/router';
+import { Link, getBasePath } from '../app/router';
 import { uiStore } from '../stores/uiStore';
 import styles from './HomePage.module.css';
 
@@ -51,9 +51,14 @@ const DOMAIN_TILES: DomainTile[] = [
 ];
 
 export const HomePage: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleOpenSearch = () => {
     uiStore.getState().openSearchModal();
   };
+
+  const basePath = getBasePath();
+  const downloadUrl = basePath ? `${basePath}/downloads/10317.hwp` : '/downloads/10317.hwp';
 
   return (
     <AppLayout hideToc={true}>
@@ -89,10 +94,14 @@ export const HomePage: React.FC = () => {
             <div className={styles.noticeText}>
               현재 수정중인 페이지입니다 기록에는 허구가 많습니다. 추후 수정할 예정입니다
             </div>
-            <Link to="/page/career-classes" className={styles.teacherLinkButton}>
+            <button
+              type="button"
+              className={styles.teacherLinkButton}
+              onClick={() => setIsModalOpen(true)}
+            >
               <span>저희 학교 선생님이시면 이걸 찾으시는거겠죠?</span>
               <span className={styles.teacherChevron} aria-hidden="true">›</span>
-            </Link>
+            </button>
           </div>
         </section>
 
@@ -181,6 +190,72 @@ export const HomePage: React.FC = () => {
             ))}
           </div>
         </section>
+
+        {/* 5. Glassmorphism Welcome Modal */}
+        {isModalOpen && (
+          <div
+            className={styles.modalOverlay}
+            onClick={() => setIsModalOpen(false)}
+            role="presentation"
+          >
+            <div
+              className={styles.glassCard}
+              onClick={(e) => e.stopPropagation()}
+              role="dialog"
+              aria-modal="true"
+              aria-label="환영 모달"
+            >
+              <button
+                type="button"
+                className={styles.modalCloseButton}
+                onClick={() => setIsModalOpen(false)}
+                aria-label="닫기"
+              >
+                ✕
+              </button>
+
+              <div className={styles.modalGlowBackground} aria-hidden="true" />
+
+              <div className={styles.modalContent}>
+                <div className={styles.rainbowHeading}>
+                  환영 합니다.
+                </div>
+                <p className={styles.modalDescription}>
+                  선생님을 위해 준비된 제출 서류 및 활동 정리 파일입니다.
+                  <br />
+                  아래 버튼을 눌러 파일을 바로 다운로드받으실 수 있습니다.
+                </p>
+
+                <div className={styles.downloadSection}>
+                  <a
+                    href={downloadUrl}
+                    download="10317.hwp"
+                    className={styles.downloadButton}
+                  >
+                    <svg
+                      className={styles.downloadIcon}
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    <span>10317.hwp 다운로드</span>
+                  </a>
+                  <span className={styles.downloadMeta}>HWP 문서 파일 (9.0 KB)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </AppLayout>
   );
